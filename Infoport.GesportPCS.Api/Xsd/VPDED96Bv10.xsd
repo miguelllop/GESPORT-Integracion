@@ -1,0 +1,1090 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSPY v2004 rel. 3 U (http://www.xmlspy.com) by Javier Carrasco (PRODEVELOP, S.L.) -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="qualified">
+	<!--ValenciaPort Data Element Dictionary v01.30-->
+	<xs:simpleType name="string1">
+		<xs:restriction base="xs:string">
+			<xs:whiteSpace value="preserve"/>
+			<xs:minLength value="1"/>
+			<xs:maxLength value="1"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="string2">
+		<xs:restriction base="xs:string">
+			<xs:whiteSpace value="preserve"/>
+			<xs:minLength value="1"/>
+			<xs:maxLength value="2"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="string4">
+		<xs:restriction base="xs:string">
+			<xs:whiteSpace value="preserve"/>
+			<xs:minLength value="4"/>
+			<xs:maxLength value="4"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="string1_2">
+		<xs:restriction base="xs:string">
+			<xs:whiteSpace value="preserve"/>
+			<xs:minLength value="1"/>
+			<xs:maxLength value="2"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="string1_3">
+		<xs:restriction base="xs:string">
+			<xs:whiteSpace value="preserve"/>
+			<xs:minLength value="1"/>
+			<xs:maxLength value="3"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="string1_4">
+		<xs:restriction base="xs:string">
+			<xs:whiteSpace value="preserve"/>
+			<xs:minLength value="1"/>
+			<xs:maxLength value="4"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="string1_6">
+		<xs:restriction base="xs:string">
+			<xs:whiteSpace value="preserve"/>
+			<xs:minLength value="1"/>
+			<xs:maxLength value="6"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="string1_7">
+		<xs:restriction base="xs:string">
+			<xs:whiteSpace value="preserve"/>
+			<xs:minLength value="1"/>
+			<xs:maxLength value="7"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="string1_8">
+		<xs:restriction base="xs:string">
+			<xs:whiteSpace value="preserve"/>
+			<xs:minLength value="1"/>
+			<xs:maxLength value="8"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="string1_9">
+		<xs:restriction base="xs:string">
+			<xs:whiteSpace value="preserve"/>
+			<xs:minLength value="1"/>
+			<xs:maxLength value="9"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="string1_10">
+		<xs:restriction base="xs:string">
+			<xs:whiteSpace value="preserve"/>
+			<xs:minLength value="1"/>
+			<xs:maxLength value="10"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="string1_14">
+		<xs:restriction base="xs:string">
+			<xs:whiteSpace value="preserve"/>
+			<xs:minLength value="1"/>
+			<xs:maxLength value="14"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="string1_17">
+		<xs:restriction base="xs:string">
+			<xs:whiteSpace value="preserve"/>
+			<xs:minLength value="1"/>
+			<xs:maxLength value="17"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="string1_25">
+		<xs:restriction base="xs:string">
+			<xs:whiteSpace value="preserve"/>
+			<xs:minLength value="1"/>
+			<xs:maxLength value="25"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="string1_26">
+		<xs:restriction base="xs:string">
+			<xs:whiteSpace value="preserve"/>
+			<xs:minLength value="1"/>
+			<xs:maxLength value="26"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="string1_35">
+		<xs:restriction base="xs:string">
+			<xs:whiteSpace value="preserve"/>
+			<xs:minLength value="1"/>
+			<xs:maxLength value="35"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="string1_70">
+		<xs:restriction base="xs:string">
+			<xs:whiteSpace value="preserve"/>
+			<xs:minLength value="1"/>
+			<xs:maxLength value="70"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="string1_256">
+		<xs:restriction base="xs:string">
+			<xs:whiteSpace value="preserve"/>
+			<xs:minLength value="1"/>
+			<xs:maxLength value="256"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="string1_350">
+		<xs:restriction base="xs:string">
+			<xs:whiteSpace value="preserve"/>
+			<xs:minLength value="1"/>
+			<xs:maxLength value="350"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="string0_350">
+		<xs:restriction base="xs:string">
+			<xs:whiteSpace value="preserve"/>
+			<xs:minLength value="0"/>
+			<xs:maxLength value="350"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="string0_35">
+		<xs:restriction base="xs:string">
+			<xs:whiteSpace value="preserve"/>
+			<xs:minLength value="0"/>
+			<xs:maxLength value="35"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="decimal1">
+		<xs:restriction base="xs:decimal">
+			<xs:totalDigits value="1"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="decimal2">
+		<xs:restriction base="xs:decimal">
+			<xs:totalDigits value="2"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="decimal3">
+		<xs:restriction base="xs:decimal">
+			<xs:totalDigits value="3"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="decimal4">
+		<xs:restriction base="xs:decimal">
+			<xs:totalDigits value="4"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="decimal6">
+		<xs:restriction base="xs:decimal">
+			<xs:totalDigits value="6"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="decimal1_2">
+		<xs:restriction base="xs:decimal">
+			<xs:totalDigits value="2" fixed="false"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="decimal1_5">
+		<xs:restriction base="xs:decimal">
+			<xs:totalDigits value="5"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="decimal1_6">
+		<xs:restriction base="xs:decimal">
+			<xs:totalDigits value="6"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="decimal1_8">
+		<xs:restriction base="xs:decimal">
+			<xs:totalDigits value="8"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="decimal1_10">
+		<xs:restriction base="xs:decimal">
+			<xs:totalDigits value="10"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="decimal1_12">
+		<xs:restriction base="xs:decimal">
+			<xs:totalDigits value="12"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="decimal1_15">
+		<xs:restriction base="xs:decimal">
+			<xs:totalDigits value="15"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="decimal1_18">
+		<xs:restriction base="xs:decimal">
+			<xs:totalDigits value="18"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="decimal1_35">
+		<xs:restriction base="xs:decimal">
+			<xs:totalDigits value="35"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<!-- ************************************Elemento Simples del diccionario  ************************ -->
+	<xs:element name="ApplicationErrorCode">
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:extension base="string1_3"/>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="AssociationAssignedCode">
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:extension base="string1_6"/>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="CarrierName">
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:extension base="string1_35"/>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="CodeListResponsibleAgencyCode">
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:extension base="string1_3"/>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="ControllingAgency">
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:extension base="string1_2"/>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="CityName">
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:extension base="string1_35"/>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="CountrySubEntityNameCode">
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:extension base="string1_9"/>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="CountryNameCode">
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:extension base="string1_3"/>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="NatureOfCargoCode">
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:extension base="string1_3"/>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="CodeListIdentificationCode">
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:extension base="string1_3"/>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="DateOrTimeOrPeriodFunctionCodeQualifier">
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:extension base="string1_3"/>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="DateOrTimeOrPeriodFormatCode">
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:extension base="string1_3"/>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="DateOrTimeOrPeriodValue">
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:extension base="string1_35"/>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="DocumentNameCode">
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:extension base="string1_3"/>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="DocumentNumber">
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:extension base="string1_35"/>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="FreeTextValue">
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:extension base="string0_350"/>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="FreeTextValueCode">
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:extension base="string1_3"/>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="GovernmentAgencyCode">
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:extension base="string1_3"/>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="HandlingInstructionCode">
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:extension base="string1_3"/>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="HandlingInstructionsLine">
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:extension base="string1_70"/>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="PlaceLocationQualifier">
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:extension base="string1_3"/>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="PlaceLocation">
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:extension base="string1_17"/>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="PlaceLocationIdentificationLine">
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:extension base="string1_25"/>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="MessageFunctionCode">
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:extension base="string1_3"/>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="MessageTypeIdentifier">
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:extension base="string1_6"/>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="MessageReferenceNumber">
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:extension base="string1_14"/>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="MessageTypeVersionNumber">
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:extension base="string1_3"/>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="MessageTypeReleaseNumber">
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:extension base="string1_3"/>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="MeansOfTransportJourneyIdentifier">
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:extension base="string1_17"/>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="MeasurementValue">
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:extension base="decimal1_18"/>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="PartyFunctionCodeQualifier">
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:extension base="string1_3"/>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="PartyIdentifier">
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:extension base="string1_35"/>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="NameAndAddressLine">
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:extension base="string0_35"/>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="PostalIdentificationCode">
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:extension base="string1_9"/>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="ConveyanceCallPurposeDescriptionCode">
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:extension base="string1_3"/>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="QuantityTypeCodeQualifier">
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:extension base="string1_3"/>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="Quantity">
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:extension base="string1_35"/>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="RangeMinimum">
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:extension base="decimal1_18"/>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="RangeMaximum">
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:extension base="decimal1_18"/>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="ReferenceQualifier">
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:extension base="string1_3"/>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="ReferenceIdentifier">
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:extension base="string1_35"/>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="ReferenceVersionIdentifier">
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:extension base="string1_35"/>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="RelatedPlaceLocationOneIdentification">
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:extension base="string1_25"/>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="ResponseTypeCode">
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:extension base="string1_3"/>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="ServiceRequirementCode">
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:extension base="string1_3"/>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="ShippingMarks">
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:extension base="string1_35"/>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="StreetNumberPostOfficeBox">
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:extension base="string1_35"/>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="TextSubjectCodeQualifier">
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:extension base="string1_3"/>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="TransportMeansDescriptionCode">
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:extension base="string1_8"/>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="TransportMeansDescription">
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:extension base="string1_17"/>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="TransportMovementCode">
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:extension base="string1_3"/>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="TransportStageCodeQualifier">
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:extension base="string1_3"/>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="TransportMeansIdentificationNameIdentifier">
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:extension base="string1_9"/>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="CodeListQualifier">
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:extension base="string1_3"/>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="TransportMeansIdentificationName">
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:extension base="string1_35"/>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="TransportMeansNationalityCode">
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:extension base="string1_3"/>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="NumberOfUnitsDetails">
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:extension base="decimal1_15"/>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="PartyName">
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:extension base="string1_35"/>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="MeasurementApplicationQualifier">
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:extension base="string1_3"/>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="MeasurementDimensionCode">
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:extension base="string1_3"/>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="MeasurementSignificanceCode">
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:extension base="string1_3"/>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="MeasurementAttribute">
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:extension base="string1_70"/>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="MeasureUnitQualifier">
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:extension base="string1_3"/>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="CodeListIdentification">
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:extension base="string1_3"/>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="EmploymentCategoryCode">
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:extension base="string1_3"/>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="EmploymentCategoryLine">
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:extension base="string1_35"/>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="HazardCodeIdentification">
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:extension base="string1_7"/>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="HazardSubstanceItemPageNumber">
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:extension base="string1_7"/>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="HazardCodeVersionNumber">
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:extension base="string1_10"/>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="InterchangeSender">
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:extension base="string1_35"/>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="InterchangeRecipient">
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:extension base="string1_35"/>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="ContactFunctionCode">
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:extension base="string1_3"/>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="DepartmentOrEmployeeIdentification">
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:extension base="string1_17"/>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="DepartmentOrEmployee">
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:extension base="string1_35"/>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="CommunicationNumber">
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:extension base="string1_25"/>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="CommunicationChannelQualifier">
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:extension base="string1_3"/>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+	<!-- ************************************Elementos Compuestos del diccionario  ************************ -->
+	<xs:element name="LocationIdentification">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="PlaceLocationIdentificationLine" minOccurs="0"/>
+				<xs:element ref="CodeListIdentificationCode" minOccurs="0"/>
+				<xs:element ref="CodeListResponsibleAgencyCode" minOccurs="0"/>
+				<xs:element ref="PlaceLocation" minOccurs="0"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="MessageIdentifier">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="MessageTypeIdentifier"/>
+				<xs:element ref="MessageTypeVersionNumber"/>
+				<xs:element ref="MessageTypeReleaseNumber"/>
+				<xs:element ref="ControllingAgency"/>
+				<xs:element ref="AssociationAssignedCode" minOccurs="0"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="MeasurementsDetails">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="MeasurementDimensionCode" minOccurs="0"/>
+				<xs:element ref="MeasurementSignificanceCode" minOccurs="0"/>
+				<xs:element ref="MeasurementAttribute" minOccurs="0"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="NatureOfCargo">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="NatureOfCargoCode"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="PartyIdentificationDetails">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="PartyIdentifier"/>
+				<xs:element ref="CodeListIdentificationCode" minOccurs="0"/>
+				<xs:element ref="CodeListResponsibleAgencyCode" minOccurs="0"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="NameAndAddressDetails">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="NameAndAddressLine" maxOccurs="5"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="RelatedLocationOneIdentification">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="RelatedPlaceLocationOneIdentification" minOccurs="0"/>
+				<xs:element ref="CodeListResponsibleAgencyCode" minOccurs="0"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="TransportMeans">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="TransportMeansDescriptionCode" minOccurs="0"/>
+				<xs:element ref="TransportMeansDescription" minOccurs="0"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="TransportIdentification">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="TransportMeansIdentificationNameIdentifier" minOccurs="0"/>
+				<xs:element ref="CodeListQualifier" minOccurs="0"/>
+				<xs:element ref="TransportMeansIdentificationName" minOccurs="0"/>
+				<xs:element ref="TransportMeansNationalityCode" minOccurs="0"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="ValueRange">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="MeasureUnitQualifier"/>
+				<xs:element ref="MeasurementValue" minOccurs="0"/>
+				<xs:element ref="RangeMinimum" minOccurs="0"/>
+				<xs:element ref="RangeMaximum" minOccurs="0"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="TextLiteral">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="FreeTextValue" maxOccurs="5"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="EmploymentQualifier">
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:extension base="string1_3"/>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="EmploymentCategory">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="EmploymentCategoryCode" minOccurs="0"/>
+				<xs:element ref="EmploymentCategoryLine" minOccurs="0"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="DangerousGoodsRegulationsCode">
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:extension base="string1_3"/>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="HazardCode">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="HazardCodeIdentification"/>
+				<xs:element ref="HazardSubstanceItemPageNumber" minOccurs="0"/>
+				<xs:element ref="HazardCodeVersionNumber" minOccurs="0"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="Service">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="ServiceRequirementCode" minOccurs="0"/>
+				<xs:element ref="CodeListIdentification" minOccurs="0"/>
+				<xs:element ref="CodeListResponsibleAgencyCode" minOccurs="0"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<!-- *********************************** Segmentos de Mensaje   *************************************-->
+	<xs:element name="ApplicationErrorInformation">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="ApplicationErrorCode"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="BeginningOfMessage">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="DocumentNameCode" minOccurs="0"/>
+				<xs:element ref="DocumentNumber" minOccurs="0"/>
+				<xs:element ref="MessageFunctionCode" minOccurs="0"/>
+				<xs:element ref="ResponseTypeCode" minOccurs="0"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="DateTimePeriod">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="DateOrTimeOrPeriodFunctionCodeQualifier"/>
+				<xs:element ref="DateOrTimeOrPeriodValue" minOccurs="0"/>
+				<xs:element ref="DateOrTimeOrPeriodFormatCode" minOccurs="0"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="DocumentMessageDetail">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="DocumentNameCode"/>
+				<xs:element ref="DocumentNumber" minOccurs="0"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="FreeText">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="TextSubjectCodeQualifier"/>
+				<xs:element ref="FreeTextValueCode" minOccurs="0"/>
+				<xs:element ref="TextLiteral" minOccurs="0"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="GovernmentalRequirements">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="TransportMovementCode" minOccurs="0"/>
+				<xs:element ref="GovernmentAgencyCode" minOccurs="0"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="HandlingInstructions">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="HandlingInstructionCode" minOccurs="0"/>
+				<xs:element ref="HandlingInstructionsLine" minOccurs="0"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="Measurements">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="MeasurementApplicationQualifier"/>
+				<xs:element ref="MeasurementsDetails" minOccurs="0"/>
+				<xs:element ref="ValueRange" minOccurs="0"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="InterchangeHeader">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="InterchangeSender"/>
+				<xs:element ref="InterchangeRecipient"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="MessageHeader">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="MessageReferenceNumber"/>
+				<xs:element ref="MessageIdentifier"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="NameAndAddress">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="PartyFunctionCodeQualifier"/>
+				<xs:element ref="PartyIdentificationDetails" minOccurs="0"/>
+				<xs:element ref="NameAndAddressDetails" minOccurs="0"/>
+				<xs:element ref="PartyName" minOccurs="0" maxOccurs="5"/>
+				<xs:element ref="StreetNumberPostOfficeBox" minOccurs="0"/>
+				<xs:element ref="CityName" minOccurs="0"/>
+				<xs:element ref="CountrySubEntityNameCode" minOccurs="0"/>
+				<xs:element ref="PostalIdentificationCode" minOccurs="0"/>
+				<xs:element ref="CountryNameCode" minOccurs="0"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="NumberOfUnits">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="NumberOfUnitsDetails"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="PlaceLocationIdentification">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="PlaceLocationQualifier"/>
+				<xs:element ref="LocationIdentification" minOccurs="0"/>
+				<xs:element ref="RelatedLocationOneIdentification" minOccurs="0"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="Reference">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="ReferenceQualifier"/>
+				<xs:element ref="ReferenceIdentifier" minOccurs="0"/>
+				<xs:element ref="ReferenceVersionIdentifier" minOccurs="0"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="SpecifyQuantity">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="QuantityTypeCodeQualifier"/>
+				<xs:element ref="Quantity"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="TransportInformation">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="TransportStageCodeQualifier"/>
+				<xs:element ref="MeansOfTransportJourneyIdentifier" minOccurs="0"/>
+				<xs:element ref="TransportMeans" minOccurs="0"/>
+				<xs:element ref="CarrierName" minOccurs="0"/>
+				<xs:element ref="TransportIdentification" minOccurs="0"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="TransportServiceRequirements">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="Service" minOccurs="0" maxOccurs="2"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="PurposeOfConveyanceCall">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="ConveyanceCallPurposeDescriptionCode"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="EmploymentDetails">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="EmploymentQualifier"/>
+				<xs:element ref="EmploymentCategory" minOccurs="0"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="DangerousGoods">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="DangerousGoodsRegulationsCode" minOccurs="0"/>
+				<xs:element ref="HazardCode" minOccurs="0"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="ContactInformation">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="ContactFunctionCode" minOccurs="0"/>
+				<xs:element ref="DepartmentOrEmployeeDetails" minOccurs="0"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="DepartmentOrEmployeeDetails">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="DepartmentOrEmployeeIdentification" minOccurs="0"/>
+				<xs:element ref="DepartmentOrEmployee" minOccurs="0"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="CommunicationContact">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="CommunicationNumber" minOccurs="0"/>
+				<xs:element ref="CommunicationChannelQualifier" minOccurs="0"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

@@ -1,0 +1,72 @@
+{
+  "$class": "VesselPortCallDeclaration",
+  "vesselPortCall": {
+    "portCallNumber": "12018100001",
+    "summaryDeclarationNumber": "461185100001",
+    "portOfCall": {
+      "code": "ESVLC",
+      "name": "VALENCIA"
+    },
+    "nextPortOfCall": {
+      "code": "ARBUE",
+      "name": "BUENOS AIRES"
+    },
+    "countryOfEntry": {
+      "code": "ES",
+      "name": "ESPAÑA"
+    },
+    "eta": "2018-09-24T14:18+02:00",
+    "vesselAgent": {
+      "organization": {
+        "code": "B98261944"
+      },
+      "office": {
+        "code": "ESVLC"
+      }
+    },
+    "arrivalVoyageNumber": "000",
+    "vessel": {
+      "code": "9404663",
+      "name": "MSC SONIA"
+    },
+    "flag": {
+      "code": "PA",
+      "name": "PANAMA"
+    },
+    "dischargePortReferences": [
+      {
+        "referenceType": "XC",
+        "referenceComment": "Number of declarations",
+        "referenceValue": "1"
+      },
+      {
+        "referenceType": "XBC",
+        "referenceComment": "Port Commercial Code",
+        "referenceValue": "MSC"
+      },
+      {
+        "referenceType": "ZLS",
+        "referenceComment": "Shipping Service",
+        "referenceValue": "FAR EAST INBOUND"
+      },
+      {
+        "referenceType": "ZRS",
+        "referenceComment": "Simplified Port Tax"
+      },
+      {
+        "referenceType": "GOR",
+        "referenceComment": "With discharge",
+        "referenceValue": "2"
+      },
+      {
+        "referenceType": "ZNR",
+        "referenceComment": "Non EU Regular Service"
+      },
+      {
+        "referenceType": "ZS4",
+        "referenceComment": "Non EU Simplified Transit"
+      }
+    ]
+  }
+}
+

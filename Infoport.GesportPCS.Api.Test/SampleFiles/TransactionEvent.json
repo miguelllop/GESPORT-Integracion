@@ -1,0 +1,145 @@
+{
+  "type": "TRANSACTION",
+  "businessEvent": null,
+  "transactionEvent": {
+    "transactionPayload": {
+      "vesselAgent": {
+        "address": {
+          "country": "",
+          "city": "",
+          "street": "",
+          "postalCode": ""
+        },
+        "officeId": "B98261944@ESVLC",
+        "organization": {
+          "code": "B98261944",
+          "name": "MEDITERRANEAN SHIPPING COMPANY ESPAÑA SL"
+        },
+        "office": {
+          "code": "ESVLC",
+          "name": ""
+        }
+      },
+      "loadingCarriers": null,
+      "dischargeCarriers": null,
+      "flag": {
+        "code": "PA",
+        "name": "PANAMA"
+      },
+      "portOfCall": {
+        "code": "ESVLC",
+        "name": "VALENCIA"
+      },
+      "loadingContainers": null,
+      "eta": "2018-09-24T14:18+02:00",
+      "arrivalTime": null,
+      "vessel": {
+        "code": "9404663",
+        "name": "MSC SONIA"
+      },
+      "activationTime": null,
+      "key": "12018100001@ESVLC",
+      "nextPortOfCall": {
+        "code": "ARBUE",
+        "name": "BUENOS AIRES"
+      },
+      "summaryDeclarationNumber": "461185100001",
+      "dischargeShippingAgents": null,
+      "version": "1.0",
+      "declarations": null,
+      "dischargePortReferences": [
+        {
+          "expiryDate": "",
+          "referenceComment": "Number of declarations",
+          "unit": "",
+          "quantity": 0,
+          "referenceType": "XC",
+          "referenceStatus": "",
+          "referenceDate": "",
+          "referenceValue": "1",
+          "referenceHash": ""
+        },
+        {
+          "expiryDate": "",
+          "referenceComment": "Port Commercial Code",
+          "unit": "",
+          "quantity": 0,
+          "referenceType": "XBC",
+          "referenceStatus": "",
+          "referenceDate": "",
+          "referenceValue": "MSC",
+          "referenceHash": ""
+        },
+        {
+          "expiryDate": "",
+          "referenceComment": "Shipping Service",
+          "unit": "",
+          "quantity": 0,
+          "referenceType": "XLS",
+          "referenceStatus": "",
+          "referenceDate": "",
+          "referenceValue": "FAR EAST INBOUND",
+          "referenceHash": ""
+        },
+        {
+          "expiryDate": "",
+          "referenceComment": "Simplified Port Tax",
+          "unit": "",
+          "quantity": 0,
+          "referenceType": "ZRS",
+          "referenceStatus": "",
+          "referenceDate": "",
+          "referenceValue": "",
+          "referenceHash": ""
+        },
+        {
+          "expiryDate": "",
+          "referenceComment": "With discharge",
+          "unit": "",
+          "quantity": 0,
+          "referenceType": "GOR",
+          "referenceStatus": "",
+          "referenceDate": "",
+          "referenceValue": "2",
+          "referenceHash": ""
+        },
+        {
+          "expiryDate": "",
+          "referenceComment": "Non EU Regular Service",
+          "unit": "",
+          "quantity": 0,
+          "referenceType": "ZNR",
+          "referenceStatus": "",
+          "referenceDate": "",
+          "referenceValue": "",
+          "referenceHash": ""
+        },
+        {
+          "expiryDate": "",
+          "referenceComment": "Non EU Simplified Transit",
+          "unit": "",
+          "quantity": 0,
+          "referenceType": "ZS4",
+          "referenceStatus": "",
+          "referenceDate": "",
+          "referenceValue": "",
+          "referenceHash": ""
+        }
+      ],
+      "doctype": "net.gesport.VesselPortCall",
+      "portCallNumber": "12018100001",
+      "loadingShippingAgents": null,
+      "countryOfEntry": {
+        "code": "ES",
+        "name": "ESPAÑA"
+      },
+      "arrivalVoyageNumber": "000",
+      "dischargeContainers": null,
+      "currentState": "REGISTERED",
+      "portCallId": "",
+      "status": "REGISTERED"
+    },
+    "transactionStatus": "completed"
+  },
+  "transactionId": "4aaed644922fd48741612a519ffb3f835dd7f7533938338052de8f544fd5e05c"
+}

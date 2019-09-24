@@ -1,0 +1,14 @@
+C:\TFS_IPV\GESPORT4.0\GESPORT4.0\Infoport.GesportPCS.Api\Infoport.GesportPCS.Api\bin\Release\netcoreapp2.2\Infoport.GesportPCS.Api.deps.json
+C:\TFS_IPV\GESPORT4.0\GESPORT4.0\Infoport.GesportPCS.Api\Infoport.GesportPCS.Api\bin\Release\netcoreapp2.2\Infoport.GesportPCS.Api.runtimeconfig.json
+C:\TFS_IPV\GESPORT4.0\GESPORT4.0\Infoport.GesportPCS.Api\Infoport.GesportPCS.Api\bin\Release\netcoreapp2.2\Infoport.GesportPCS.Api.runtimeconfig.dev.json
+C:\TFS_IPV\GESPORT4.0\GESPORT4.0\Infoport.GesportPCS.Api\Infoport.GesportPCS.Api\bin\Release\netcoreapp2.2\Infoport.GesportPCS.Api.dll
+C:\TFS_IPV\GESPORT4.0\GESPORT4.0\Infoport.GesportPCS.Api\Infoport.GesportPCS.Api\bin\Release\netcoreapp2.2\Infoport.GesportPCS.Api.pdb
+C:\TFS_IPV\GESPORT4.0\GESPORT4.0\Infoport.GesportPCS.Api\Infoport.GesportPCS.Api\obj\Release\netcoreapp2.2\Infoport.GesportPCS.Api.csprojAssemblyReference.cache
+C:\TFS_IPV\GESPORT4.0\GESPORT4.0\Infoport.GesportPCS.Api\Infoport.GesportPCS.Api\obj\Release\netcoreapp2.2\Infoport.GesportPCS.Api.csproj.CoreCompileInputs.cache
+C:\TFS_IPV\GESPORT4.0\GESPORT4.0\Infoport.GesportPCS.Api\Infoport.GesportPCS.Api\obj\Release\netcoreapp2.2\Infoport.GesportPCS.Api.RazorAssemblyInfo.cache
+C:\TFS_IPV\GESPORT4.0\GESPORT4.0\Infoport.GesportPCS.Api\Infoport.GesportPCS.Api\obj\Release\netcoreapp2.2\Infoport.GesportPCS.Api.RazorAssemblyInfo.cs
+C:\TFS_IPV\GESPORT4.0\GESPORT4.0\Infoport.GesportPCS.Api\Infoport.GesportPCS.Api\obj\Release\netcoreapp2.2\Infoport.GesportPCS.Api.AssemblyInfoInputs.cache
+C:\TFS_IPV\GESPORT4.0\GESPORT4.0\Infoport.GesportPCS.Api\Infoport.GesportPCS.Api\obj\Release\netcoreapp2.2\Infoport.GesportPCS.Api.AssemblyInfo.cs
+C:\TFS_IPV\GESPORT4.0\GESPORT4.0\Infoport.GesportPCS.Api\Infoport.GesportPCS.Api\obj\Release\netcoreapp2.2\Infoport.GesportPCS.Api.RazorTargetAssemblyInfo.cache
+C:\TFS_IPV\GESPORT4.0\GESPORT4.0\Infoport.GesportPCS.Api\Infoport.GesportPCS.Api\obj\Release\netcoreapp2.2\Infoport.GesportPCS.Api.dll
+C:\TFS_IPV\GESPORT4.0\GESPORT4.0\Infoport.GesportPCS.Api\Infoport.GesportPCS.Api\obj\Release\netcoreapp2.2\Infoport.GesportPCS.Api.pdb

@@ -1,0 +1,87 @@
+2019-06-20 12:36:08.487 +02:00 [Information] Iniciando aplicación
+2019-06-20 12:36:10.915 +02:00 [Debug] Configuring http clients
+2019-06-20 12:36:17.583 +02:00 [Debug] Evento PCS recibido: BERMAN
+2019-06-20 13:04:29.822 +02:00 [Information] Iniciando aplicación
+2019-06-20 13:04:32.659 +02:00 [Debug] Configuring http clients
+2019-06-20 13:04:40.170 +02:00 [Debug] Evento PCS recibido: BERMAN
+2019-06-20 13:04:42.629 +02:00 [Error] Error al procesar mensaje de PCS
+System.InvalidOperationException: There is an error in XML document (1, 1). ---> System.Xml.XmlException: Data at the root level is invalid. Line 1, position 1.
+   at System.Xml.XmlTextReaderImpl.Throw(Exception e)
+   at System.Xml.XmlTextReaderImpl.Throw(String res, String arg)
+   at System.Xml.XmlTextReaderImpl.ParseRootLevelWhitespace()
+   at System.Xml.XmlTextReaderImpl.ParseDocumentContent()
+   at System.Xml.XmlTextReaderImpl.Read()
+   at System.Xml.XmlReader.MoveToContent()
+   at Microsoft.Xml.Serialization.GeneratedAssembly.XmlSerializationReaderBERMAN.Read111_BERMAN()
+   --- End of inner exception stack trace ---
+   at System.Xml.Serialization.XmlSerializer.Deserialize(XmlReader xmlReader, String encodingStyle, XmlDeserializationEvents events)
+   at System.Xml.Serialization.XmlSerializer.Deserialize(XmlReader xmlReader)
+   at Infoport.GesportPCS.Api.BERMAN.Deserialize(String xml) in C:\TFS_IPV\GESPORT4.0\GESPORT4.0\Infoport.GesportPCS.Api\Infoport.GesportPCS.Api\Xsd\BERMAN.designer.cs:line 25586
+   at Infoport.GesportPCS.Api.Controllers.PcsEventController.Post(PCSMessage msg) in C:\TFS_IPV\GESPORT4.0\GESPORT4.0\Infoport.GesportPCS.Api\Infoport.GesportPCS.Api\Controllers\PcsEventController.cs:line 43
+2019-06-20 13:52:04.215 +02:00 [Information] Iniciando aplicación
+2019-06-20 13:52:04.310 +02:00 [Debug] Configuring http clients
+2019-06-20 13:52:32.048 +02:00 [Debug] Evento PCS recibido: IFCSUM
+2019-06-20 13:52:32.183 +02:00 [Debug] Sumaria parseada correctamente -> Sumaria: 46119502609
+2019-06-20 13:52:32.185 +02:00 [Debug] Obteniendo información de la escala -> Escala: 1201902609
+2019-06-20 13:52:33.021 +02:00 [Debug] Datos obtenidos de la escala en PCS:
+<?xml version="1.0" encoding="UTF-8"?><Result><PortCall>1201902609</PortCall><Status>FIN</Status><Vessel>MSC GAIA</Vessel><Voyage>FD920E / FD920E</Voyage><IMO>9401142</IMO><MMSI>353051000</MMSI><CallSign>3EXO7</CallSign><VesselFlag>PANAMA</VesselFlag><VesselBuildingDate>01/01/2010 00:00</VesselBuildingDate><InternationalNavigation>True</InternationalNavigation><VesselType>PORTACONTENEDOR</VesselType><VesselGT>151559,00</VesselGT><VesselBeam>51,20</VesselBeam><VesselLength>366,03</VesselLength><VesselMaximumDraught>16,00</VesselMaximumDraught><SummaryDeclaration>46119502609</SummaryDeclaration><SummaryRegistrationDate>14/05/2019 10:48</SummaryRegistrationDate><SummaryActivationDate>01/06/2019 01:05</SummaryActivationDate><ETA>31/05/2019 22:00</ETA><ATA>01/06/2019 01:05</ATA><ETD>01/06/2019 22:00</ETD><ATD>02/06/2019 05:05</ATD><PreviousPortOfCallName>GENOVA</PreviousPortOfCallName><PortOfCallName>VALENCIA</PortOfCallName><NextPortOfCallName>BARCELONA</NextPortOfCallName><RegularLine>DRAGON SERVICE (MSC)</RegularLine><VesselAgentName>M.S.C. ESPAÑA, S.L.U.</VesselAgentName><VesselAgentCif>B98261944</VesselAgentCif><VesselAgentAddress>CL SUIZA, 12 46024 VALENCIA (VALENCIA)</VesselAgentAddress><VesselAgentPhone>96 3359100</VesselAgentPhone><VesselAgentFax>96 3359129</VesselAgentFax><ShipOwner>Msc Mediterranean Shipping                                                                          </ShipOwner><ShipOwnerCif></ShipOwnerCif><LoadCarrierAgent>BERGE MARITIMA, S.L.</LoadCarrierAgent><LoadCarrierAgent>CONSIG. MAR.Y LOGISTICA S.L.</LoadCarrierAgent><LoadCarrierAgent>M.S.C. ESPAÑA, S.L.U.</LoadCarrierAgent><LoadCarrierAgent>M.S.C. ESPAÑA, S.L.U.</LoadCarrierAgent><LoadCarrierAgent>MAERSK SPAIN,S.L.U,</LoadCarrierAgent><LoadCarrierAgent>MAERSK SPAIN,S.L.U,</LoadCarrierAgent><LoadCarrierAgent>WEC LINES ESPAÑA, S.L.U.</LoadCarrierAgent><LoadCarrierAgent>WEC LINES ESPAÑA, S.L.U.</LoadCarrierAgent><UnloadCarrierAgent>BERGE MARITIMA, S.L.</UnloadCarrierAgent><UnloadCarrierAgent>CONSIG. MAR.Y LOGISTICA S.L.</UnloadCarrierAgent><UnloadCarrierAgent>M.S.C. ESPAÑA, S.L.U.</UnloadCarrierAgent><UnloadCarrierAgent>M.S.C. ESPAÑA, S.L.U.</UnloadCarrierAgent><UnloadCarrierAgent>MAERSK SPAIN,S.L.U,</UnloadCarrierAgent><Operation><TerminalName>CSP IBERIAN VALENCIA TMNAL SAU</TerminalName><QuayName>PRINCIPE FELIPE</QuayName><BerthNumber>1</BerthNumber><OperationTypeCode>ZD</OperationTypeCode><EstimatedStartOfOperationsDate>01/06/2019 02:00</EstimatedStartOfOperationsDate><ActualStartOfOperationsDate>01/06/2019 08:00</ActualStartOfOperationsDate><EstimatedEndOfOperationsDate>01/06/2019 20:00</EstimatedEndOfOperationsDate><ActualEndOfOperationsDate>02/06/2019 02:00</ActualEndOfOperationsDate></Operation><Operation><TerminalName>CSP IBERIAN VALENCIA TMNAL SAU</TerminalName><QuayName>PRINCIPE FELIPE</QuayName><BerthNumber>1</BerthNumber><OperationTypeCode>ZE</OperationTypeCode><EstimatedStartOfOperationsDate>01/06/2019 02:00</EstimatedStartOfOperationsDate><ActualStartOfOperationsDate>01/06/2019 08:00</ActualStartOfOperationsDate><EstimatedEndOfOperationsDate>01/06/2019 20:00</EstimatedEndOfOperationsDate><ActualEndOfOperationsDate>02/06/2019 02:00</ActualEndOfOperationsDate></Operation></Result>
+2019-06-20 13:52:33.085 +02:00 [Debug] Sumaria mapeada: 46119502609
+2019-06-20 13:52:35.776 +02:00 [Debug] Enviando BillOfLading -> BL:MSCUEJ032746
+2019-06-20 13:52:36.406 +02:00 [Debug] Añadiendo declaración BL
+2019-06-20 13:52:37.011 +02:00 [Debug] Obteniendo token
+2019-06-20 13:52:37.312 +02:00 [Debug] Toker obtenido
+2019-06-20 13:52:48.533 +02:00 [Debug] BillOfLading enviada -> BL:MSCUEJ032746 - TransId:0b4fbd2514527c0b8e544b894db263a5468f7fbd63e8affd3963a0ec5583a825
+2019-06-26 13:37:49.879 +02:00 [Information] Iniciando aplicación
+2019-06-26 13:37:50.048 +02:00 [Debug] Configuring http clients
+2019-06-26 14:31:42.305 +02:00 [Information] Iniciando aplicación
+2019-06-26 14:31:42.435 +02:00 [Debug] Configuring http clients
+2019-06-26 14:32:20.206 +02:00 [Information] Evento PCS recibido: BERMAN
+2019-06-26 14:32:43.626 +02:00 [Error] Petición no autorizada -> Origen: ::1
+2019-06-26 14:34:48.087 +02:00 [Information] Iniciando aplicación
+2019-06-26 14:34:48.195 +02:00 [Debug] Configuring http clients
+2019-06-26 14:34:56.040 +02:00 [Information] Evento PCS recibido: BERMAN
+2019-06-26 14:35:11.804 +02:00 [Error] Petición no autorizada -> Origen: ::1
+2019-06-26 14:35:29.777 +02:00 [Information] Evento PCS recibido: BERMAN
+2019-06-26 14:35:50.750 +02:00 [Information] Iniciando aplicación
+2019-06-26 14:35:50.995 +02:00 [Debug] Configuring http clients
+2019-06-26 14:35:59.229 +02:00 [Information] Evento PCS recibido: BERMAN
+2019-06-26 14:37:06.250 +02:00 [Information] Iniciando aplicación
+2019-06-26 14:37:06.391 +02:00 [Debug] Configuring http clients
+2019-06-26 14:37:12.181 +02:00 [Information] Evento PCS recibido: BERMAN
+2019-06-26 14:40:20.518 +02:00 [Information] Iniciando aplicación
+2019-06-26 14:40:20.789 +02:00 [Debug] Configuring http clients
+2019-06-26 14:40:52.098 +02:00 [Information] Evento PCS recibido: BERMAN
+2019-06-26 14:41:48.349 +02:00 [Error] Petición no autorizada -> Origen: ::1
+2019-06-26 14:48:48.569 +02:00 [Information] Iniciando aplicación
+2019-06-26 14:48:48.686 +02:00 [Debug] Configuring http clients
+2019-06-26 14:49:45.630 +02:00 [Information] Evento PCS recibido: string
+2019-06-26 14:50:23.755 +02:00 [Error] Petición no autorizada -> Origen: ::1
+2019-07-03 11:49:15.056 +02:00 [Information] Iniciando aplicación
+2019-07-03 11:51:10.040 +02:00 [Debug] Configuring http clients
+2019-07-03 12:04:57.536 +02:00 [Debug] Comprobando token
+2019-07-03 12:04:58.391 +02:00 [Warning] Fallo validación token -> Error: Unauthorized - 
+System.Threading.Tasks.Task`1[System.Threading.Tasks.Task`1[System.IO.Stream]]
+2019-07-03 12:04:58.393 +02:00 [Error] Llamada no autorizada
+URL: http://localhost:5000/api/businessevent
+
+2019-07-03 12:14:58.190 +02:00 [Information] Iniciando aplicación
+2019-07-03 12:15:26.729 +02:00 [Debug] Configuring http clients
+2019-07-03 12:30:59.767 +02:00 [Information] Iniciando aplicación
+2019-07-03 12:31:10.235 +02:00 [Debug] Configuring http clients
+2019-07-03 12:51:40.644 +02:00 [Information] Iniciando aplicación
+2019-07-03 12:51:59.422 +02:00 [Debug] Configuring http clients
+2019-07-03 12:54:27.712 +02:00 [Information] Iniciando aplicación
+2019-07-03 12:55:14.951 +02:00 [Debug] Configuring http clients
+2019-07-03 12:55:44.898 +02:00 [Information] Iniciando aplicación
+2019-07-03 12:56:14.404 +02:00 [Debug] Configuring http clients
+2019-07-03 13:26:32.947 +02:00 [Information] Iniciando aplicación
+2019-07-03 13:30:46.407 +02:00 [Information] Iniciando aplicación
+2019-07-03 13:33:27.315 +02:00 [Information] Iniciando aplicación
+2019-07-03 13:33:41.472 +02:00 [Debug] Configuring http clients
+2019-07-03 13:46:11.412 +02:00 [Information] Iniciando aplicación
+2019-07-03 13:46:11.452 +02:00 [Debug] Configuring http clients
+2019-07-04 12:55:37.302 +02:00 [Information] Iniciando aplicación
+2019-07-04 12:55:37.467 +02:00 [Debug] Configuring http clients
+2019-07-04 12:56:47.515 +02:00 [Information] Evento PCS recibido: string
+2019-07-04 13:02:35.448 +02:00 [Information] Iniciando aplicación
+2019-07-04 13:02:35.555 +02:00 [Debug] Configuring http clients

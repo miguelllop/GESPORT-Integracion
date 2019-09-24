@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Result>
+  <PortCall>1201901244</PortCall>
+  <Status>FIN</Status>
+  <Vessel>AS PALATIA</Vessel>
+  <Voyage>019S / 019S</Voyage>
+  <IMO>9294513</IMO>
+  <MMSI>255806094</MMSI>
+  <CallSign>CQIX4</CallSign>
+  <VesselFlag>PORTUGAL</VesselFlag>
+  <VesselBuildingDate>01/06/2006 00:00</VesselBuildingDate>
+  <InternationalNavigation>True</InternationalNavigation>
+  <VesselType>PORTACONTENEDOR</VesselType>
+  <VesselGT>27100,00</VesselGT>
+  <VesselBeam>30,17</VesselBeam>
+  <VesselLength>210,00</VesselLength>
+  <VesselMaximumDraught>11,50</VesselMaximumDraught>
+  <SummaryDeclaration>46119501244</SummaryDeclaration>
+  <SummaryRegistrationDate>26/02/2019 15:59</SummaryRegistrationDate>
+  <SummaryActivationDate>01/04/2019 23:50</SummaryActivationDate>
+  <ETA>01/04/2019 22:00</ETA>
+  <ATA>01/04/2019 23:50</ATA>
+  <ETD>02/04/2019 21:30</ETD>
+  <ATD>03/04/2019 05:50</ATD>
+  <PreviousPortOfCallName>CASTELLON</PreviousPortOfCallName>
+  <PortOfCallName>VALENCIA</PortOfCallName>
+  <NextPortOfCallName>ALGECIRAS</NextPortOfCallName>
+  <RegularLine>COSCO-WEST AFRICA SERVICE</RegularLine>
+  <VesselAgentName>COSCO SHIPPING LINES (SP) S.A.</VesselAgentName>
+  <VesselAgentCif>A61361796</VesselAgentCif>
+  <VesselAgentAddress>CL MENORCA, 19 PL 46023 VALENCIA (VALENCIA)</VesselAgentAddress>
+  <VesselAgentPhone>96 3939100</VesselAgentPhone>
+  <VesselAgentFax>96 3939119</VesselAgentFax>
+  <ShipOwner>COSCO CONTAINER LINES (COSCON)                                                                      </ShipOwner>
+  <ShipOwnerCif/>
+  <LoadCarrierAgent>COSCO SHIPPING LINES (SP) S.A.</LoadCarrierAgent>
+  <LoadCarrierAgent>COSCO SHIPPING LINES (SP) S.A.</LoadCarrierAgent>
+  <LoadCarrierAgent>COSCO SHIPPING LINES (SP) S.A.</LoadCarrierAgent>
+  <LoadCarrierAgent>M.S.C. ESPAÑA, S.L.U.</LoadCarrierAgent>
+  <LoadCarrierAgent>M.S.C. ESPAÑA, S.L.U.</LoadCarrierAgent>
+  <LoadCarrierAgent>ORIENT OVERSEAS CONTAINER LINE</LoadCarrierAgent>
+  <UnloadCarrierAgent>COSCO SHIPPING LINES (SP) S.A.</UnloadCarrierAgent>
+  <UnloadCarrierAgent>GIMENO SERVICIOS PORTUARIOS SA</UnloadCarrierAgent>
+  <UnloadCarrierAgent>M.S.C. ESPAÑA, S.L.U.</UnloadCarrierAgent>
+  <UnloadCarrierAgent>M.S.C. ESPAÑA, S.L.U.</UnloadCarrierAgent>
+  <Operation>
+    <TerminalName>CSP IBERIAN VALENCIA TMNAL SAU</TerminalName>
+    <QuayName>M. ESTE (PRINCIPE FELIPE)</QuayName>
+    <BerthNumber>1</BerthNumber>
+    <OperationTypeCode>ZD</OperationTypeCode>
+    <EstimatedStartOfOperationsDate>02/04/2019 02:00</EstimatedStartOfOperationsDate>
+    <ActualStartOfOperationsDate>02/04/2019 02:00</ActualStartOfOperationsDate>
+    <EstimatedEndOfOperationsDate>02/04/2019 20:00</EstimatedEndOfOperationsDate>
+    <ActualEndOfOperationsDate>03/04/2019 05:00</ActualEndOfOperationsDate>
+  </Operation>
+  <Operation>
+    <TerminalName>CSP IBERIAN VALENCIA TMNAL SAU</TerminalName>
+    <QuayName>M. ESTE (PRINCIPE FELIPE)</QuayName>
+    <BerthNumber>1</BerthNumber>
+    <OperationTypeCode>ZE</OperationTypeCode>
+    <EstimatedStartOfOperationsDate>02/04/2019 02:00</EstimatedStartOfOperationsDate>
+    <ActualStartOfOperationsDate>02/04/2019 02:00</ActualStartOfOperationsDate>
+    <EstimatedEndOfOperationsDate>02/04/2019 20:00</EstimatedEndOfOperationsDate>
+    <ActualEndOfOperationsDate>03/04/2019 05:00</ActualEndOfOperationsDate>
+  </Operation>
+</Result>

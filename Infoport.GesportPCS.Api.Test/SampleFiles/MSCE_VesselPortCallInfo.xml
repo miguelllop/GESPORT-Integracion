@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Result>
+  <PortCall>1201902609</PortCall>
+  <Status>PRV</Status>
+  <Vessel>MSC GAIA</Vessel>
+  <Voyage>FD920E / FD920E</Voyage>
+  <IMO>9401142</IMO>
+  <MMSI>353051000</MMSI>
+  <CallSign>3EXO7</CallSign>
+  <VesselFlag>PANAMA</VesselFlag>
+  <VesselBuildingDate>01/01/2010 00:00</VesselBuildingDate>
+  <InternationalNavigation>True</InternationalNavigation>
+  <VesselType>PORTACONTENEDOR</VesselType>
+  <VesselGT>151559,00</VesselGT>
+  <VesselBeam>51,20</VesselBeam>
+  <VesselLength>366,03</VesselLength>
+  <VesselMaximumDraught>16,00</VesselMaximumDraught>
+  <SummaryDeclaration>46119502609</SummaryDeclaration>
+  <SummaryRegistrationDate>14/05/2019 10:48</SummaryRegistrationDate>
+  <SummaryActivationDate />
+  <ETA>31/05/2019 06:00</ETA>
+  <ATA />
+  <ETD>01/06/2019 10:00</ETD>
+  <ATD />
+  <PreviousPortOfCallName>GENOVA</PreviousPortOfCallName>
+  <PortOfCallName>VALENCIA</PortOfCallName>
+  <NextPortOfCallName>BARCELONA</NextPortOfCallName>
+  <RegularLine>DRAGON SERVICE (MSC)</RegularLine>
+  <VesselAgentName>M.S.C. ESPAÑA, S.L.U.</VesselAgentName>
+  <VesselAgentCif>B98261944</VesselAgentCif>
+  <VesselAgentAddress>CL SUIZA, 12 46024 VALENCIA (VALENCIA)</VesselAgentAddress>
+  <VesselAgentPhone>96 3359100</VesselAgentPhone>
+  <VesselAgentFax>96 3359129</VesselAgentFax>
+  <ShipOwner>Msc Mediterranean Shipping                                                                          </ShipOwner>
+  <ShipOwnerCif/>
+  <LoadCarrierAgent>BERGE MARITIMA, S.L.</LoadCarrierAgent>
+  <LoadCarrierAgent>CONSIG. MAR.Y LOGISTICA S.L.</LoadCarrierAgent>
+  <LoadCarrierAgent>M.S.C. ESPAÑA, S.L.U.</LoadCarrierAgent>
+  <LoadCarrierAgent>MAERSK SPAIN,S.L.U,</LoadCarrierAgent>
+  <LoadCarrierAgent>WEC LINES ESPAÑA, S.L.U.</LoadCarrierAgent>
+  <UnloadCarrierAgent>BERGE MARITIMA, S.L.</UnloadCarrierAgent>
+  <UnloadCarrierAgent>CONSIG. MAR.Y LOGISTICA S.L.</UnloadCarrierAgent>
+  <UnloadCarrierAgent>M.S.C. ESPAÑA, S.L.U.</UnloadCarrierAgent>
+  <UnloadCarrierAgent>MAERSK SPAIN,S.L.U,</UnloadCarrierAgent>
+</Result>

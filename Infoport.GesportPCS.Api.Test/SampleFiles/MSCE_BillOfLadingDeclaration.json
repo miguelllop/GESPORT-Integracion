@@ -1,0 +1,228 @@
+{
+  "declaration": {
+    "bls": [
+      {
+        "blNumber": "MSCUEJ032746",
+        "carrier": {
+          "address": {
+            "street": "CL SUIZA, 12 46024 VALENCIA (VALENCIA)"
+          },
+          "office": {
+            "code": "ESVLC",
+            "name": ""
+          },
+          "organization": {
+            "code": "MSCU",
+            "name": "M.S.C. ESPAÑA, S.L.U."
+          },
+          "phone": "96 3359100"
+        },
+        "containers": [
+          {
+            "blNumber": "MSCUEJ032746",
+            "carrier": {
+              "address": {
+                "street": "CL SUIZA, 12 46024 VALENCIA (VALENCIA)"
+              },
+              "office": {
+                "code": "ESVLC",
+                "name": ""
+              },
+              "organization": {
+                "code": "MSCU",
+                "name": "M.S.C. ESPAÑA, S.L.U."
+              },
+              "phone": "96 3359100"
+            },
+            "containerNumber": "SZLU9270709",
+            "containerStatus": "FULL",
+            "containerType": {
+              "code": "4532"
+            },
+            "goodsItems": [
+              {
+                "dangerousGoods": [
+                  {
+                    "undg": {}
+                  }
+                ],
+                "goodsDescription": {
+                  "code": "0307"
+                },
+                "goodsItemNumber": "00001",
+                "goodsReferences": [
+                  {
+                    "referenceDate": "09/05/2019 0:00:00",
+                    "referenceStatus": "T",
+                    "referenceType": "355",
+                    "referenceValue": "19ITQSSEN0028131N9"
+                  }
+                ],
+                "grossWeight": "27562",
+                "marksAndNumbers": "NO Disponible",
+                "packages": [
+                  {
+                    "packageItem": {
+                      "code": "SZLU9270709"
+                    },
+                    "packageNumber": 1125,
+                    "packageType": {
+                      "code": "CT"
+                    }
+                  }
+                ]
+              }
+            ],
+            "seals": [
+              {
+                "number": "EU08669020"
+              }
+            ],
+            "shippingAgent": {
+              "office": {
+                "code": "B98261944"
+              },
+              "officeId": "B98261944@ESVLC",
+              "organization": {
+                "code": "ESVLC"
+              }
+            },
+            "subsequentTransportMode": {
+              "code": "ZZ2"
+            },
+            "tareWeight": "4590",
+            "terminalOperator": {
+              "office": {
+                "code": "A46604815"
+              },
+              "officeId": "A46604815@ESVLC",
+              "organization": {
+                "code": "A46604815"
+              }
+            }
+          }
+        ],
+        "dischargeBerth": {
+          "code": "00"
+        },
+        "goodsItems": [
+          {
+            "dangerousGoods": [
+              {
+                "undg": {}
+              }
+            ],
+            "goodsDescription": {
+              "code": "0307"
+            },
+            "goodsItemNumber": "00001",
+            "goodsReferences": [
+              {
+                "referenceDate": "09/05/2019 0:00:00",
+                "referenceStatus": "T",
+                "referenceType": "355",
+                "referenceValue": "19ITQSSEN0028131N9"
+              }
+            ],
+            "grossWeight": "27562",
+            "marksAndNumbers": "NO Disponible",
+            "packages": [
+              {
+                "packageItem": {
+                  "code": "SZLU9270709"
+                },
+                "packageNumber": 1125,
+                "packageType": {
+                  "code": "CT"
+                }
+              }
+            ]
+          }
+        ],
+        "placeOfDelivery": {
+          "code": "ESVLC"
+        },
+        "placeOfOrigin": {
+          "code": "YEMKX"
+        },
+        "portOfDischarge": {
+          "code": "ESVLC",
+          "name": "VALENCIA"
+        },
+        "portOfLoading": {
+          "code": "YEMKX"
+        },
+        "portOfTranshipment": {
+          "code": "OMSLL"
+        },
+        "shippingAgent": {
+          "office": {
+            "code": "B98261944"
+          },
+          "officeId": "B98261944@ESVLC",
+          "organization": {
+            "code": "ESVLC"
+          }
+        },
+        "subsequentTransportMode": {
+          "code": "ZZ2"
+        },
+        "vessel": {
+          "code": "9401142",
+          "name": "MSC GAIA"
+        },
+        "voyageNumber": "FD920E / FD920E"
+      }
+    ],
+    "dischargePortReferences": [
+      {
+        "referenceComment": "With Discharge",
+        "referenceType": "GOR",
+        "referenceValue": "2"
+      },
+      {
+        "referenceComment": "Shipping service",
+        "referenceType": "ZLS",
+        "referenceValue": "5153"
+      },
+      {
+        "referenceComment": "Operation terminal",
+        "referenceType": "ZTC",
+        "referenceValue": "VLC011"
+      },
+      {
+        "referenceComment": "Simplified port tax",
+        "referenceType": "ZRS",
+        "referenceValue": "NO"
+      },
+      {
+        "referenceComment": "Regular service",
+        "referenceType": "ZNR"
+      },
+      {
+        "referenceComment": "Non EU simplified transit",
+        "referenceType": "ZNR"
+      }
+    ],
+    "dischargeTerminalOperator": {
+      "office": {
+        "code": "A46604815"
+      },
+      "officeId": "A46604815@ESVLC",
+      "organization": {
+        "code": "A46604815"
+      }
+    },
+    "portCallId": "1201902609@ESVLC",
+    "shippingAgent": {
+      "office": {
+        "code": "B98261944"
+      },
+      "officeId": "B98261944@ESVLC",
+      "organization": {
+        "code": "ESVLC"
+      }
+    },
+    "summaryDeclarationNumber": "46119502609"
+  }
+}

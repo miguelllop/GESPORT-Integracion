@@ -1,0 +1,19 @@
+{
+  "type": "BUSINESS_EVENT",
+  "businessEvent": {
+    "eventName": "1234@1@DECLARATION.CHANGE.VesselPortCall",
+    "eventPayload": {
+      "doctype": "net.gesport.BusinessEvent",
+      "vesselPortCallId": "1234@1",
+      "officeIds": [ "ValenciaportPCS@ESVLC" ],
+      "eventName": "VesselPortCall",
+      "eventType": "DECLARATION",
+      "eventFunction": "CHANGE",
+      "version": "1.0",
+      "key": "1234@1@DECLARATION.CHANGE.VesselPortCall",
+      "mainAssetId": "1234@1"
+    }
+  },
+  "transactionEvent": null,
+  "transactionId": "4aaed644922fd48741612a519ffb3f835dd7f7533938338052de8f544fd5e05c"
+}

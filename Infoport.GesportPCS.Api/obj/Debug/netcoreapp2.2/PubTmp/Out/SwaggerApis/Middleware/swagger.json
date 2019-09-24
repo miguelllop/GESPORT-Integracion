@@ -1,0 +1,1907 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "description": "Some custom description of the Middleware.",
+    "version": "1.2",
+    "title": "GESPORT_OFFCHAIN DOCUMENTATION",
+    "contact": {},
+    "license": {
+      "name": "Apache 2.0",
+      "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
+    }
+  },
+  "host": "gesport4offchain.belikesoftware.com:8080",
+  "basePath": "/",
+  "tags": [
+    {
+      "name": "web-rest-controller",
+      "description": "."
+    }
+  ],
+  "paths": {
+    "/api/AddGoodsItems": {
+      "post": {
+        "tags": [ "web-rest-controller" ],
+        "summary": "addGoodsItems",
+        "description": "Method to add goods items in a BillOfLading asset from a bill of lading declaration. \n\n\tRequired parameters to execute this transaction:\n\t portCallId\n\t shippingAgent.organization..code\n",
+        "operationId": "postAddGoodsItemsUsingPOST",
+        "consumes": [ "application/json" ],
+        "produces": [ "*/*" ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "billOfLadingDeclaration",
+            "description": "billOfLadingDeclaration",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/BillOfLadingDeclaration"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "type": "string"
+            }
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          }
+        },
+        "deprecated": false
+      }
+    },
+    "/api/AddOffice": {
+      "post": {
+        "tags": [ "web-rest-controller" ],
+        "summary": "addOffice",
+        "description": "Event to notify the successful completion of the transactions.\n",
+        "operationId": "postAddOfficeUsingPOST",
+        "consumes": [ "application/json" ],
+        "produces": [ "*/*" ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "Office",
+            "description": "Office",
+            "required": true,
+            "schema": {
+              "type": "object",
+              "additionalProperties": {
+                "type": "object",
+                "properties": {}
+              }
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "type": "string"
+            }
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          }
+        },
+        "deprecated": false
+      }
+    },
+    "/api/ArrivalNoticeService": {
+      "post": {
+        "tags": [ "web-rest-controller" ],
+        "summary": "NotifyArrival",
+        "description": "Submits an arrival notice for a BillOfLading asset.\n\n\tRequired parameters to execute this transaction: \n\t blId\n\t shipper.organization.code\n\t consignee.organization.code\n\t bank.organization.code",
+        "operationId": "postArrivalNoticeUsingPOST",
+        "consumes": [ "application/json" ],
+        "produces": [ "*/*" ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "notifyArrivalDeclaration",
+            "description": "notifyArrivalDeclaration",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/NotifyArrivalDeclaration"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "type": "string"
+            }
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          }
+        },
+        "deprecated": false
+      }
+    },
+    "/api/BillOfLadingService": {
+      "post": {
+        "tags": [ "web-rest-controller" ],
+        "summary": "AddBls",
+        "description": "Adds new BillOfLading assets. \n\n\tRequired parameters to execute this transaction:\n\t portCallId\n\t shippingAgent.organization..code\n",
+        "operationId": "postBillOfLadingUsingPOST",
+        "consumes": [ "application/json" ],
+        "produces": [ "*/*" ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "billOfLadingDeclaration",
+            "description": "billOfLadingDeclaration",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/BillOfLadingDeclaration"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "type": "string"
+            }
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          }
+        },
+        "deprecated": false
+      }
+    },
+    "/api/BusinessEvent": {
+      "post": {
+        "tags": [ "web-rest-controller" ],
+        "summary": "BusinessEvent",
+        "description": "Event to notify the successful completion of the transactions.\n\n\tRequired parameters to execute this transaction: \n\t eventType\n\t eventFunction\n\t eventName\n",
+        "operationId": "postBusinessEventUsingPOST",
+        "consumes": [ "application/json" ],
+        "produces": [ "*/*" ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "businessEvent",
+            "description": "businessEvent",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/EventQueue"
+            }
+          },
+          {
+            "name": "portCalCode",
+            "in": "query",
+            "description": "portCalCode",
+            "required": false,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "type": "object",
+              "additionalProperties": {
+                "type": "object",
+                "properties": {}
+              }
+            }
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          }
+        },
+        "deprecated": false
+      }
+    },
+    "/api/CancelVesselPortCallService": {
+      "post": {
+        "tags": [ "web-rest-controller" ],
+        "summary": "CancelVesselPortCallService",
+        "description": "Cancel a registered VesselPortCall asset. \n\n\tRequired parameters to execute this transaction: \n\t portCallNumber\n\t vesselAgent.organization.code\n\t portOfCall.code\n",
+        "operationId": "postCancelVesselUsingPOST",
+        "consumes": [ "application/json" ],
+        "produces": [ "*/*" ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "vesselPortCallDeclaration",
+            "description": "vesselPortCallDeclaration",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/VesselPortCallDeclaration"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "type": "string"
+            }
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          }
+        },
+        "deprecated": false
+      }
+    },
+    "/api/ChangeGoodsItems": {
+      "post": {
+        "tags": [ "web-rest-controller" ],
+        "summary": "changeGoodsItems",
+        "description": "Method to change goods items in a BillOfLading asset from a bill of lading declaration. \n\n\tRequired parameters to execute this transaction:\n\t portCallId\n\t shippingAgent.organization..code\n",
+        "operationId": "postChangeGoodsItemsUsingPOST",
+        "consumes": [ "application/json" ],
+        "produces": [ "*/*" ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "billOfLadingDeclaration",
+            "description": "billOfLadingDeclaration",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/BillOfLadingDeclaration"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "type": "string"
+            }
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          }
+        },
+        "deprecated": false
+      }
+    },
+    "/api/ChangeOffice": {
+      "post": {
+        "tags": [ "web-rest-controller" ],
+        "summary": "ChangeOffice",
+        "description": "Event to notify the successful completion of the transactions.\n",
+        "operationId": "postChangeOfficeUsingPOST",
+        "consumes": [ "application/json" ],
+        "produces": [ "*/*" ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "Office",
+            "description": "Office",
+            "required": true,
+            "schema": {
+              "type": "object",
+              "additionalProperties": {
+                "type": "object",
+                "properties": {}
+              }
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "type": "string"
+            }
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          }
+        },
+        "deprecated": false
+      }
+    },
+    "/api/ConfirmMembership": {
+      "post": {
+        "tags": [ "web-rest-controller" ],
+        "summary": "ConfirmMembership",
+        "operationId": "postConfirmMembershipUsingPOST",
+        "consumes": [ "application/json" ],
+        "produces": [ "*/*" ],
+        "parameters": [
+          {
+            "name": "identityId",
+            "in": "query",
+            "description": "identityId",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "isAdmin",
+            "in": "query",
+            "description": "isAdmin",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "officeKey",
+            "in": "query",
+            "description": "officeKey",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "type": "string"
+            }
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          }
+        },
+        "deprecated": false
+      }
+    },
+    "/api/GetBillOfLading/{data}": {
+      "post": {
+        "tags": [ "web-rest-controller" ],
+        "summary": "GetBl",
+        "description": "Returns the billfLading stored in the pcs private collection. \n\n\tRequired parameters to execute this transaction:\n\t portCallId\n\t shippingAgent.organization..code\n",
+        "operationId": "postGetBillOfLadingUsingPOST",
+        "consumes": [ "application/json" ],
+        "produces": [ "*/*" ],
+        "parameters": [
+          {
+            "name": "data",
+            "in": "path",
+            "description": "data",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "type": "string"
+            }
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          }
+        },
+        "deprecated": false
+      }
+    },
+    "/api/GetBillOfLadingList": {
+      "post": {
+        "tags": [ "web-rest-controller" ],
+        "summary": "searchBillOfLanding",
+        "operationId": "searchBillOfLandingUsingPOST",
+        "consumes": [ "application/json" ],
+        "produces": [ "*/*" ],
+        "parameters": [
+          {
+            "name": "query",
+            "in": "query",
+            "description": "query",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "type": "string"
+            }
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          }
+        },
+        "deprecated": false
+      }
+    },
+    "/api/GetBlockInfo": {
+      "get": {
+        "tags": [ "web-rest-controller" ],
+        "summary": "getBlockChainInfo",
+        "operationId": "getBlockChainInfoUsingGET",
+        "produces": [ "*/*" ],
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/BlockChainMetaData"
+            }
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          }
+        },
+        "deprecated": false
+      }
+    },
+    "/api/GetCountBillOfLanding": {
+      "post": {
+        "tags": [ "web-rest-controller" ],
+        "summary": "GetCountBillOfLanding",
+        "description": " Returns count of BillOfLanding stored. \n",
+        "operationId": "countBillOfLandingUsingPOST",
+        "consumes": [ "application/json" ],
+        "produces": [ "*/*" ],
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "type": "string"
+            }
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          }
+        },
+        "deprecated": false
+      }
+    },
+    "/api/GetCountVesselPortCall": {
+      "post": {
+        "tags": [ "web-rest-controller" ],
+        "summary": "GetCountVesselPortCall",
+        "description": " Returns count of VesselPortCall stored. \n",
+        "operationId": "countVesselPortCallUsingPOST",
+        "consumes": [ "application/json" ],
+        "produces": [ "*/*" ],
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "type": "string"
+            }
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          }
+        },
+        "deprecated": false
+      }
+    },
+    "/api/GetCurrentIdentityId": {
+      "get": {
+        "tags": [ "web-rest-controller" ],
+        "summary": "getCurrentIdentityId",
+        "description": " Returns the vesselPortCall stored in the world state database.",
+        "operationId": "postGetCurrentIdentityIdUsingGET",
+        "produces": [ "*/*" ],
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "type": "string"
+            }
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          }
+        },
+        "deprecated": false
+      }
+    },
+    "/api/GetCurrentParticipant": {
+      "get": {
+        "tags": [ "web-rest-controller" ],
+        "summary": "GetCurrentParticipant",
+        "operationId": "postGetCurrentParticipantUsingGET",
+        "produces": [ "*/*" ],
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "type": "string"
+            }
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          }
+        },
+        "deprecated": false
+      }
+    },
+    "/api/GetEvent": {
+      "get": {
+        "tags": [ "web-rest-controller" ],
+        "summary": "getEvent",
+        "operationId": "getEventUsingGET",
+        "produces": [ "*/*" ],
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "type": "string"
+            }
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          }
+        },
+        "deprecated": false
+      }
+    },
+    "/api/GetOffice/{data}": {
+      "post": {
+        "tags": [ "web-rest-controller" ],
+        "summary": "GetOffice",
+        "description": " Returns the vesselPortCall stored in the world state database.",
+        "operationId": "postGetOfficeUsingPOST",
+        "consumes": [ "application/json" ],
+        "produces": [ "*/*" ],
+        "parameters": [
+          {
+            "name": "data",
+            "in": "path",
+            "description": "data",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "type": "string"
+            }
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          }
+        },
+        "deprecated": false
+      }
+    },
+    "/api/GetTxEvent": {
+      "get": {
+        "tags": [ "web-rest-controller" ],
+        "summary": "getTxEvent",
+        "operationId": "getTxEventUsingGET",
+        "produces": [ "*/*" ],
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "type": "string"
+            }
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          }
+        },
+        "deprecated": false
+      }
+    },
+    "/api/GetUserName": {
+      "get": {
+        "tags": [ "web-rest-controller" ],
+        "summary": "getUserName",
+        "operationId": "getUserNameUsingGET",
+        "produces": [ "text/plain" ],
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "type": "string"
+            }
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          }
+        },
+        "deprecated": false
+      }
+    },
+    "/api/GetVesselPortCall": {
+      "get": {
+        "tags": [ "web-rest-controller" ],
+        "summary": "GetVesselPortCall",
+        "description": " Returns the vesselPortCall stored in the world state database. \n\n\tRequired parameters to execute this transaction: \n\t portCallNumber\n\t vesselAgent.organization.code\n\t portOfCall.code\n",
+        "operationId": "postGetVesselPortCallCompatUsingGET",
+        "produces": [ "*/*" ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "data",
+            "description": "data",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "type": "string"
+            }
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          }
+        },
+        "deprecated": false
+      }
+    },
+    "/api/GetVesselPortCall/{data}": {
+      "get": {
+        "tags": [ "web-rest-controller" ],
+        "summary": "GetVesselPortCall",
+        "description": " Returns the vesselPortCall stored in the world state database. \n\n\tRequired parameters to execute this transaction: \n\t portCallNumber\n\t vesselAgent.organization.code\n\t portOfCall.code\n",
+        "operationId": "getVesselPortCallUsingGET",
+        "produces": [ "*/*" ],
+        "parameters": [
+          {
+            "name": "data",
+            "in": "path",
+            "description": "data",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "type": "string"
+            }
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          }
+        },
+        "deprecated": false
+      }
+    },
+    "/api/GetVesselPortCallList": {
+      "post": {
+        "tags": [ "web-rest-controller" ],
+        "summary": "searchVesselPortCall",
+        "operationId": "searchVesselPortCallUsingPOST",
+        "consumes": [ "application/json" ],
+        "produces": [ "*/*" ],
+        "parameters": [
+          {
+            "name": "elementsPerPage",
+            "in": "query",
+            "description": "elementsPerPage",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "page",
+            "in": "query",
+            "description": "page",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "query",
+            "in": "query",
+            "description": "query",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "type": "string"
+            }
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          }
+        },
+        "deprecated": false
+      }
+    },
+    "/api/RemoveBillOfLading": {
+      "post": {
+        "tags": [ "web-rest-controller" ],
+        "summary": "removeBillOfLading",
+        "description": "Removes the BillOfLading. \n\n\tRequired parameters to execute this transaction:\n\t portCallId\n\t shippingAgent.organization..code\n",
+        "operationId": "postRemoveBillOfLadingUsingPOST",
+        "consumes": [ "application/json" ],
+        "produces": [ "*/*" ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "billOfLadingDeclaration",
+            "description": "billOfLadingDeclaration",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/BillOfLadingDeclaration"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "type": "string"
+            }
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          }
+        },
+        "deprecated": false
+      }
+    },
+    "/api/RemoveGoodsItems": {
+      "post": {
+        "tags": [ "web-rest-controller" ],
+        "summary": "removeGoodsItems",
+        "description": "Method to remove goods items in a BillOfLading asset from a bill of lading declaration. \n\n\tRequired parameters to execute this transaction:\n\t portCallId\n\t shippingAgent.organization..code\n",
+        "operationId": "postRemoveGoodsItemsUsingPOST",
+        "consumes": [ "application/json" ],
+        "produces": [ "*/*" ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "billOfLadingDeclaration",
+            "description": "billOfLadingDeclaration",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/BillOfLadingDeclaration"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "type": "string"
+            }
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          }
+        },
+        "deprecated": false
+      }
+    },
+    "/api/RemoveOffice": {
+      "post": {
+        "tags": [ "web-rest-controller" ],
+        "summary": "RemoveOffice",
+        "description": "Event to notify the successful completion of the transactions.\n",
+        "operationId": "postRemoveOfficeUsingPOST",
+        "consumes": [ "application/json" ],
+        "produces": [ "*/*" ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "Office",
+            "description": "Office",
+            "required": true,
+            "schema": {
+              "type": "object",
+              "additionalProperties": {
+                "type": "object",
+                "properties": {}
+              }
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "type": "string"
+            }
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          }
+        },
+        "deprecated": false
+      }
+    },
+    "/api/RequestMembership": {
+      "get": {
+        "tags": [ "web-rest-controller" ],
+        "summary": "RequestMembership",
+        "operationId": "postRequestMembershipUsingGET",
+        "produces": [ "*/*" ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "membership",
+            "description": "membership",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "type": "string"
+            }
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          }
+        },
+        "deprecated": false
+      }
+    },
+    "/api/UpdateBillOfLading": {
+      "post": {
+        "tags": [ "web-rest-controller" ],
+        "summary": "updateBls",
+        "description": "Update a registered bill of lading into the store. \n\n\tRequired parameters to execute this transaction:\n\t portCallId\n\t shippingAgent.organization..code\n",
+        "operationId": "postUpdateBillOfLadingUsingPOST",
+        "consumes": [ "application/json" ],
+        "produces": [ "*/*" ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "billOfLadingDeclaration",
+            "description": "billOfLadingDeclaration",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/BillOfLadingDeclaration"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "type": "string"
+            }
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          }
+        },
+        "deprecated": false
+      }
+    },
+    "/api/UpdateVesselPortCallService": {
+      "post": {
+        "tags": [ "web-rest-controller" ],
+        "summary": "UpdateVesselPortCallService",
+        "description": "Update a registered VesselPortCall asset. \n\n\tRequired parameters to execute this transaction: \n\t portCallNumber\n\t vesselAgent.organization.code\n\t portOfCall.code\n",
+        "operationId": "postUpdateVesselUsingPOST",
+        "consumes": [ "application/json" ],
+        "produces": [ "*/*" ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "vesselPortCallDeclaration",
+            "description": "vesselPortCallDeclaration",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/VesselPortCallDeclaration"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "type": "string"
+            }
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          }
+        },
+        "deprecated": false
+      }
+    },
+    "/api/VesselArrived": {
+      "post": {
+        "tags": [ "web-rest-controller" ],
+        "summary": "VesselArrived",
+        "description": " Method to notify that a vessel arrived. \n\n\tRequired parameters to execute this transaction: \n\t portCallNumber\n\t vesselAgent.organization.code\n\t portOfCall.code\n",
+        "operationId": "postVesselArrivedUsingPOST",
+        "consumes": [ "application/json" ],
+        "produces": [ "*/*" ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "vesselPortCallDeclaration",
+            "description": "vesselPortCallDeclaration",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/VesselPortCallDeclaration"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "type": "string"
+            }
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          }
+        },
+        "deprecated": false
+      }
+    },
+    "/api/VesselPortCallService": {
+      "post": {
+        "tags": [ "web-rest-controller" ],
+        "summary": "AddVesselPortCall",
+        "description": "Adds a new VesselPortCall asset. \n\n\tRequired parameters to execute this transaction: \n\t portCallNumber\n\t vesselAgent.organization.code\n\t portOfCall.code\n",
+        "operationId": "postVesselUsingPOST",
+        "consumes": [ "application/json" ],
+        "produces": [ "*/*" ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "vesselPortCallDeclaration",
+            "description": "vesselPortCallDeclaration",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/VesselPortCallDeclaration"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "type": "string"
+            }
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          }
+        },
+        "deprecated": false
+      }
+    }
+  },
+  "definitions": {
+    "Address": {
+      "type": "object",
+      "properties": {
+        "city": {
+          "type": "string"
+        },
+        "country": {
+          "type": "string"
+        },
+        "postalCode": {
+          "type": "string"
+        },
+        "street": {
+          "type": "string"
+        }
+      },
+      "title": "Address"
+    },
+    "Amount": {
+      "type": "object",
+      "properties": {
+        "currency": {
+          "$ref": "#/definitions/Code"
+        },
+        "value": {
+          "type": "string"
+        }
+      },
+      "title": "Amount"
+    },
+    "ArrivalNotice": {
+      "type": "object",
+      "properties": {
+        "arrivalNoticeDate": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "blHolder": {
+          "$ref": "#/definitions/Party"
+        },
+        "blId": {
+          "type": "string"
+        },
+        "blType": {
+          "type": "string",
+          "enum": [ "SEAWAYBILL", "BL", "EXPRESS", "MEMO", "HOUSEs" ]
+        },
+        "consignee": {
+          "$ref": "#/definitions/Party"
+        },
+        "freeDemurrageDays": {
+          "type": "integer",
+          "format": "int32"
+        },
+        "freeDetentionDays": {
+          "type": "integer",
+          "format": "int32"
+        },
+        "haulierArrangement": {
+          "type": "string",
+          "enum": [ "MERCHANT", "CARRIER", "AGENT" ]
+        },
+        "shipper": {
+          "$ref": "#/definitions/Party"
+        }
+      },
+      "title": "ArrivalNotice"
+    },
+    "BillOfLadingDeclaration": {
+      "type": "object",
+      "properties": {
+        "$class": {
+          "type": "string"
+        },
+        "declaration": {
+          "$ref": "#/definitions/ShippingAgentDeclaration"
+        }
+      },
+      "title": "BillOfLadingDeclaration"
+    },
+    "BlDeclaration": {
+      "type": "object",
+      "properties": {
+        "blNumber": {
+          "type": "string"
+        },
+        "carrier": {
+          "$ref": "#/definitions/Party"
+        },
+        "containers": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/ContainerItem"
+          }
+        },
+        "dischargeBerth": {
+          "$ref": "#/definitions/Code"
+        },
+        "dischargePortReferences": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Reference"
+          }
+        },
+        "dischargeTerminalOperator": {
+          "$ref": "#/definitions/Party"
+        },
+        "flag": {
+          "$ref": "#/definitions/Code"
+        },
+        "goodsItems": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/GoodsItem"
+          }
+        },
+        "placeOfDelivery": {
+          "$ref": "#/definitions/Code"
+        },
+        "placeOfOrigin": {
+          "$ref": "#/definitions/Code"
+        },
+        "portOfDischarge": {
+          "$ref": "#/definitions/Code"
+        },
+        "portOfLoading": {
+          "$ref": "#/definitions/Code"
+        },
+        "portOfTranshipment": {
+          "$ref": "#/definitions/Code"
+        },
+        "shippingAgent": {
+          "$ref": "#/definitions/Party"
+        },
+        "subsequentTransportMode": {
+          "$ref": "#/definitions/Code"
+        },
+        "vessel": {
+          "$ref": "#/definitions/Code"
+        },
+        "voyageNumber": {
+          "type": "string"
+        }
+      },
+      "title": "BlDeclaration"
+    },
+    "BlockChainMetaData": {
+      "type": "object",
+      "properties": {
+        "blockNumber": {
+          "type": "integer",
+          "format": "int64"
+        },
+        "txNumber": {
+          "type": "integer",
+          "format": "int64"
+        }
+      },
+      "title": "BlockChainMetaData"
+    },
+    "BusinessEvent": {
+      "type": "object",
+      "properties": {
+        "eventName": {
+          "type": "string"
+        },
+        "eventPayload": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "object",
+            "properties": {}
+          }
+        }
+      },
+      "title": "BusinessEvent"
+    },
+    "Charge": {
+      "type": "object",
+      "properties": {
+        "concept": {
+          "$ref": "#/definitions/Code"
+        },
+        "exchangedAmount": {
+          "$ref": "#/definitions/Amount"
+        },
+        "originalAmount": {
+          "$ref": "#/definitions/Amount"
+        }
+      },
+      "title": "Charge"
+    },
+    "Code": {
+      "type": "object",
+      "properties": {
+        "code": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        }
+      },
+      "title": "Code"
+    },
+    "ContainerItem": {
+      "type": "object",
+      "properties": {
+        "blNumber": {
+          "type": "string"
+        },
+        "bookingNumber": {
+          "type": "string"
+        },
+        "carrier": {
+          "$ref": "#/definitions/Party"
+        },
+        "containerNumber": {
+          "type": "string"
+        },
+        "containerStatus": {
+          "type": "string",
+          "enum": [ "FULL", "EMPTY" ]
+        },
+        "containerType": {
+          "$ref": "#/definitions/Code"
+        },
+        "customsReleased": {
+          "type": "boolean"
+        },
+        "expectedTime": {
+          "type": "string"
+        },
+        "goodsItems": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/GoodsItem"
+          }
+        },
+        "grossWeight": {
+          "type": "string"
+        },
+        "operationTime": {
+          "type": "string"
+        },
+        "seals": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Seal"
+          }
+        },
+        "shipmentClause": {
+          "$ref": "#/definitions/Code"
+        },
+        "shippingAgent": {
+          "$ref": "#/definitions/Party"
+        },
+        "subsequentTransportMode": {
+          "$ref": "#/definitions/Code"
+        },
+        "tareWeight": {
+          "type": "string"
+        },
+        "terminalOperator": {
+          "$ref": "#/definitions/Party"
+        }
+      },
+      "title": "ContainerItem"
+    },
+    "DangerousGoodsItem": {
+      "type": "object",
+      "properties": {
+        "acidConcentration": {
+          "type": "string"
+        },
+        "additionalInfos": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Reference"
+          }
+        },
+        "contact": {
+          "$ref": "#/definitions/Party"
+        },
+        "imdgPage": {
+          "type": "string"
+        },
+        "netVolume": {
+          "type": "string"
+        },
+        "netWeight": {
+          "type": "string"
+        },
+        "packingGroup": {
+          "type": "string"
+        },
+        "portAuthorization": {
+          "type": "string"
+        },
+        "radioactivity": {
+          "type": "string"
+        },
+        "shipmentFlashpoint": {
+          "type": "string"
+        },
+        "undg": {
+          "$ref": "#/definitions/Code"
+        },
+        "undgClass": {
+          "type": "string"
+        }
+      },
+      "title": "DangerousGoodsItem"
+    },
+    "EventQueue": {
+      "type": "object",
+      "properties": {
+        "businessEvent": {
+          "$ref": "#/definitions/BusinessEvent"
+        },
+        "transactionEvent": {
+          "$ref": "#/definitions/TransactionEvent"
+        },
+        "transactionId": {
+          "type": "string"
+        },
+        "type": {
+          "type": "string",
+          "enum": [ "TRANSACTION", "BUSINESS_EVENT" ]
+        }
+      },
+      "title": "EventQueue"
+    },
+    "ExchangeRate": {
+      "type": "object",
+      "properties": {
+        "destinationCurrency": {
+          "$ref": "#/definitions/Amount"
+        },
+        "sourceCurrency": {
+          "$ref": "#/definitions/Amount"
+        }
+      },
+      "title": "ExchangeRate"
+    },
+    "FreightCharges": {
+      "type": "object",
+      "properties": {
+        "bank": {
+          "$ref": "#/definitions/Party"
+        },
+        "bankAccount": {
+          "type": "string"
+        },
+        "charges": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Charge"
+          }
+        },
+        "dueDate": {
+          "type": "string"
+        },
+        "exchange": {
+          "$ref": "#/definitions/ExchangeRate"
+        },
+        "from": {
+          "$ref": "#/definitions/Party"
+        },
+        "invoiceNumber": {
+          "type": "string"
+        },
+        "issueDate": {
+          "type": "string"
+        },
+        "paymentMethod": {
+          "type": "string",
+          "enum": [ "BANK", "CREDIT" ]
+        },
+        "references": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Reference"
+          }
+        },
+        "subject": {
+          "type": "string"
+        },
+        "subtotal": {
+          "$ref": "#/definitions/Amount"
+        },
+        "taxes": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Charge"
+          }
+        },
+        "to": {
+          "$ref": "#/definitions/Party"
+        },
+        "total": {
+          "$ref": "#/definitions/Amount"
+        }
+      },
+      "title": "FreightCharges"
+    },
+    "GoodsItem": {
+      "type": "object",
+      "properties": {
+        "additionalUnit": {
+          "$ref": "#/definitions/Measurement"
+        },
+        "countryOfOrigin": {
+          "type": "string"
+        },
+        "customsReferences": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Reference"
+          }
+        },
+        "customsRegime": {
+          "type": "string"
+        },
+        "customsSection": {
+          "type": "string"
+        },
+        "dangerousGoods": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/DangerousGoodsItem"
+          }
+        },
+        "documents": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Reference"
+          }
+        },
+        "goodsDescription": {
+          "$ref": "#/definitions/Code"
+        },
+        "goodsItemNumber": {
+          "type": "string"
+        },
+        "goodsReferences": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Reference"
+          }
+        },
+        "grossWeight": {
+          "type": "string"
+        },
+        "marksAndNumbers": {
+          "type": "string"
+        },
+        "netWeight": {
+          "type": "string"
+        },
+        "packages": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Package"
+          }
+        },
+        "previousCustomsDocument": {
+          "$ref": "#/definitions/Reference"
+        },
+        "provinceOfOrigin": {
+          "type": "string"
+        },
+        "requiredCertificates": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/RequiredCertificate"
+          }
+        },
+        "summaryDeclaration": {
+          "type": "string"
+        },
+        "transitSummaryDeclaration": {
+          "type": "string"
+        },
+        "vins": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "volume": {
+          "type": "string"
+        }
+      },
+      "title": "GoodsItem"
+    },
+    "Measurement": {
+      "type": "object",
+      "properties": {
+        "type": {
+          "$ref": "#/definitions/Code"
+        },
+        "unit": {
+          "$ref": "#/definitions/Code"
+        },
+        "value": {
+          "type": "string"
+        }
+      },
+      "title": "Measurement"
+    },
+    "NotifyArrivalDeclaration": {
+      "type": "object",
+      "properties": {
+        "$class": {
+          "type": "string"
+        },
+        "arrivalNotice": {
+          "$ref": "#/definitions/ArrivalNotice"
+        },
+        "charges": {
+          "$ref": "#/definitions/FreightCharges"
+        }
+      },
+      "title": "NotifyArrivalDeclaration"
+    },
+    "Package": {
+      "type": "object",
+      "properties": {
+        "packageItem": {
+          "$ref": "#/definitions/Code"
+        },
+        "packageNumber": {
+          "type": "integer",
+          "format": "int32"
+        },
+        "packageType": {
+          "$ref": "#/definitions/Code"
+        }
+      },
+      "title": "Package"
+    },
+    "Party": {
+      "type": "object",
+      "properties": {
+        "address": {
+          "$ref": "#/definitions/Address"
+        },
+        "email": {
+          "type": "string"
+        },
+        "office": {
+          "$ref": "#/definitions/Code"
+        },
+        "officeId": {
+          "type": "string"
+        },
+        "organization": {
+          "$ref": "#/definitions/Code"
+        },
+        "phone": {
+          "type": "string"
+        }
+      },
+      "title": "Party"
+    },
+    "Reference": {
+      "type": "object",
+      "properties": {
+        "expiryDate": {
+          "type": "string"
+        },
+        "quantity": {
+          "type": "integer",
+          "format": "int32"
+        },
+        "referenceComment": {
+          "type": "string"
+        },
+        "referenceDate": {
+          "type": "string"
+        },
+        "referenceHash": {
+          "type": "string"
+        },
+        "referenceStatus": {
+          "type": "string"
+        },
+        "referenceType": {
+          "type": "string"
+        },
+        "referenceValue": {
+          "type": "string"
+        },
+        "unit": {
+          "type": "string"
+        }
+      },
+      "title": "Reference"
+    },
+    "RequiredCertificate": {
+      "type": "object",
+      "properties": {
+        "certificateType": {
+          "type": "string"
+        },
+        "containerNumbers": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "governmentAgency": {
+          "$ref": "#/definitions/Party"
+        },
+        "hasPhysicalInspection": {
+          "type": "boolean"
+        },
+        "inspectionId": {
+          "type": "string"
+        },
+        "typeOfInspection": {
+          "type": "string"
+        }
+      },
+      "title": "RequiredCertificate"
+    },
+    "Seal": {
+      "type": "object",
+      "properties": {
+        "number": {
+          "type": "string"
+        },
+        "owner": {
+          "type": "string"
+        }
+      },
+      "title": "Seal"
+    },
+    "ShippingAgentDeclaration": {
+      "type": "object",
+      "properties": {
+        "bls": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/BlDeclaration"
+          }
+        },
+        "dischargePortReferences": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Reference"
+          }
+        },
+        "dischargeTerminalOperator": {
+          "$ref": "#/definitions/Party"
+        },
+        "portCallId": {
+          "type": "string"
+        },
+        "registrationTime": {
+          "type": "string"
+        },
+        "shippingAgent": {
+          "$ref": "#/definitions/Party"
+        },
+        "summaryDeclarationNumber": {
+          "type": "string"
+        }
+      },
+      "title": "ShippingAgentDeclaration"
+    },
+    "SummaryDeclaration": {
+      "type": "object",
+      "properties": {
+        "blIds": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "dischargePortReferences": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Reference"
+          }
+        },
+        "registrationTime": {
+          "type": "string"
+        },
+        "shippingAgent": {
+          "$ref": "#/definitions/Party"
+        },
+        "summaryDeclarationNumber": {
+          "type": "string"
+        }
+      },
+      "title": "SummaryDeclaration"
+    },
+    "TransactionEvent": {
+      "type": "object",
+      "properties": {
+        "transactionPayload": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "object",
+            "properties": {}
+          }
+        },
+        "transactionStatus": {
+          "type": "string"
+        }
+      },
+      "title": "TransactionEvent"
+    },
+    "VesselPortCall": {
+      "type": "object",
+      "properties": {
+        "activationTime": {
+          "type": "string"
+        },
+        "arrivalTime": {
+          "type": "string"
+        },
+        "arrivalVoyageNumber": {
+          "type": "string"
+        },
+        "countryOfEntry": {
+          "$ref": "#/definitions/Code"
+        },
+        "declarations": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/SummaryDeclaration"
+          }
+        },
+        "dischargeCarriers": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Party"
+          }
+        },
+        "dischargeContainers": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/ContainerItem"
+          }
+        },
+        "dischargePortReferences": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Reference"
+          }
+        },
+        "dischargeShippingAgents": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Party"
+          }
+        },
+        "eta": {
+          "type": "string"
+        },
+        "flag": {
+          "$ref": "#/definitions/Code"
+        },
+        "loadingCarriers": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Party"
+          }
+        },
+        "loadingContainers": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/ContainerItem"
+          }
+        },
+        "loadingShippingAgents": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Party"
+          }
+        },
+        "nextPortOfCall": {
+          "$ref": "#/definitions/Code"
+        },
+        "portCallId": {
+          "type": "string"
+        },
+        "portCallNumber": {
+          "type": "string"
+        },
+        "portOfCall": {
+          "$ref": "#/definitions/Code"
+        },
+        "status": {
+          "type": "string",
+          "enum": [ "REGISTERED", "RELEASED", "CANCELED", "ACTIVE", "FINISHED" ]
+        },
+        "summaryDeclarationNumber": {
+          "type": "string"
+        },
+        "version": {
+          "type": "string"
+        },
+        "vessel": {
+          "$ref": "#/definitions/Code"
+        },
+        "vesselAgent": {
+          "$ref": "#/definitions/Party"
+        }
+      },
+      "title": "VesselPortCall"
+    },
+    "VesselPortCallDeclaration": {
+      "type": "object",
+      "properties": {
+        "$class": {
+          "type": "string"
+        },
+        "vesselPortCall": {
+          "$ref": "#/definitions/VesselPortCall"
+        }
+      },
+      "title": "VesselPortCallDeclaration"
+    }
+  }
+}

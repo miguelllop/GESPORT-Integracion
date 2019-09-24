@@ -1,0 +1,45 @@
+﻿{
+  "vesselPortCall": {
+    "countryOfEntry": {},
+    "dischargePortReferences": [
+      {
+        "referenceComment": "Number of declarations",
+        "referenceType": "XC",
+        "referenceValue": "05"
+      }
+    ],
+    "eta": "201905310600",
+    "flag": {
+      "code": "PA"
+    },
+    "nextPortOfCall": {
+      "code": "ESBCN"
+    },
+    "portCallId": "1201902609@ESVLC",
+    "portCallNumber": "1201902609",
+    "portOfCall": {
+      "code": "ESVLC"
+    },
+    "summaryDeclarationNumber": "46119502609",
+    "vessel": {
+      "code": "9401142",
+      "name": "MSC GAIA"
+    },
+    "vesselAgent": {
+      "address": {
+        "city": "VALENCIA",
+        "country": "ES",
+        "postalCode": "46024",
+        "street": "CLSUIZA12"
+      },
+      "office": {
+        "code": "ESVLC"
+      },
+      "officeId": "B98261944@ESVLC",
+      "organization": {
+        "code": "B98261944",
+        "name": "M.S.C. ESPA�A, S.L.U."
+      }
+    }
+  }
+}

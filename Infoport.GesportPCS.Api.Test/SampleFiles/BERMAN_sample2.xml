@@ -1,0 +1,496 @@
+<BERMAN>
+<InterchangeHeader>
+  <InterchangeSender>PUERTOVALENCIA</InterchangeSender>
+  <InterchangeRecipient>PUERTOS</InterchangeRecipient>
+</InterchangeHeader>
+<MessageHeader>
+  <MessageReferenceNumber>PORT5900122003</MessageReferenceNumber>
+  <MessageIdentifier>
+	<MessageTypeIdentifier>BERMAN</MessageTypeIdentifier>
+	<MessageTypeVersionNumber>D</MessageTypeVersionNumber>
+	<MessageTypeReleaseNumber>03A</MessageTypeReleaseNumber>
+	<ControllingAgency>UN</ControllingAgency>
+	<AssociationAssignedCode>PE1041</AssociationAssignedCode>
+  </MessageIdentifier>
+</MessageHeader>
+<BeginningOfMessage>
+  <DocumentNameCode>21</DocumentNameCode>
+  <DocumentNumber>PORT5900122003</DocumentNumber>
+  <MessageFunctionCode>47</MessageFunctionCode>
+</BeginningOfMessage>
+<DateTimePeriod>
+  <DateOrTimeOrPeriodFunctionCodeQualifier>137</DateOrTimeOrPeriodFunctionCodeQualifier>
+  <DateOrTimeOrPeriodValue>201904170937</DateOrTimeOrPeriodValue>
+  <DateOrTimeOrPeriodFormatCode>203</DateOrTimeOrPeriodFormatCode>
+</DateTimePeriod>
+<FreeText>
+  <TextSubjectCodeQualifier>ACB</TextSubjectCodeQualifier>
+  <FreeTextValueCode>ZDC</FreeTextValueCode>
+</FreeText>
+<FreeText>
+  <TextSubjectCodeQualifier>ACB</TextSubjectCodeQualifier>
+  <FreeTextValueCode>ZNF</FreeTextValueCode>
+</FreeText>
+<FreeText>
+  <TextSubjectCodeQualifier>ACB</TextSubjectCodeQualifier>
+  <FreeTextValueCode>ZIE</FreeTextValueCode>
+</FreeText>
+<FreeText>
+  <TextSubjectCodeQualifier>AAA</TextSubjectCodeQualifier>
+  <TextLiteral>
+	<FreeTextValue>paneles de madera en bandejas</FreeTextValue>
+  </TextLiteral>
+</FreeText>
+<Reference>
+  <ReferenceQualifier>SSR</ReferenceQualifier>
+  <ReferenceIdentifier>2201900150</ReferenceIdentifier>
+</Reference>
+<Reference>
+  <ReferenceQualifier>ATZ</ReferenceQualifier>
+  <ReferenceIdentifier>ESGAN201900150</ReferenceIdentifier>
+</Reference>
+<SpecifyQuantity>
+  <QuantityTypeCodeQualifier>ZTE</QuantityTypeCodeQualifier>
+  <Quantity>00008</Quantity>
+</SpecifyQuantity>
+<SpecifyQuantity>
+  <QuantityTypeCodeQualifier>ZTS</QuantityTypeCodeQualifier>
+  <Quantity>00008</Quantity>
+</SpecifyQuantity>
+<SpecifyQuantity>
+  <QuantityTypeCodeQualifier>ZWE</QuantityTypeCodeQualifier>
+  <Quantity>000</Quantity>
+</SpecifyQuantity>
+<SpecifyQuantity>
+  <QuantityTypeCodeQualifier>ZWS</QuantityTypeCodeQualifier>
+  <Quantity>000</Quantity>
+</SpecifyQuantity>
+<SpecifyQuantity>
+  <QuantityTypeCodeQualifier>ZDP</QuantityTypeCodeQualifier>
+  <Quantity>001</Quantity>
+</SpecifyQuantity>
+<SpecifyQuantity>
+  <QuantityTypeCodeQualifier>ZPE</QuantityTypeCodeQualifier>
+  <Quantity>00000</Quantity>
+</SpecifyQuantity>
+<SpecifyQuantity>
+  <QuantityTypeCodeQualifier>ZPS</QuantityTypeCodeQualifier>
+  <Quantity>00000</Quantity>
+</SpecifyQuantity>
+<NameAndAddressGroup>
+  <NameAndAddress>
+	<PartyFunctionCodeQualifier>CV</PartyFunctionCodeQualifier>
+	<PartyIdentificationDetails>
+	  <PartyIdentifier>B12912036</PartyIdentifier>
+	  <CodeListIdentificationCode>167</CodeListIdentificationCode>
+	  <CodeListResponsibleAgencyCode>148</CodeListResponsibleAgencyCode>
+	</PartyIdentificationDetails>
+	<PartyName>SINGLAR AGENCIA MARITIMA, S.L.</PartyName>
+	<StreetNumberPostOfficeBox>PSDE BUENA VISTA31, E</StreetNumberPostOfficeBox>
+	<CityName>CASTELLON DE LA PLANA</CityName>
+	<PostalIdentificationCode>12100</PostalIdentificationCode>
+	<CountryNameCode>ES</CountryNameCode>
+  </NameAndAddress>
+</NameAndAddressGroup>
+<NameAndAddressGroup>
+  <NameAndAddress>
+	<PartyFunctionCodeQualifier>OV</PartyFunctionCodeQualifier>
+	<PartyIdentificationDetails>
+	  <PartyIdentifier>9291</PartyIdentifier>
+	  <CodeListIdentificationCode>58</CodeListIdentificationCode>
+	  <CodeListResponsibleAgencyCode>ZDG</CodeListResponsibleAgencyCode>
+	</PartyIdentificationDetails>
+	<PartyName>INTERORIENT MARINE SERVICES LT</PartyName>
+  </NameAndAddress>
+</NameAndAddressGroup>
+<NameAndAddressGroup>
+  <NameAndAddress>
+	<PartyFunctionCodeQualifier>ZME</PartyFunctionCodeQualifier>
+	<PartyName>Rubanov Mykola</PartyName>
+	<CountryNameCode>ZZ</CountryNameCode>
+  </NameAndAddress>
+</NameAndAddressGroup>
+<NameAndAddressGroup>
+  <NameAndAddress>
+	<PartyFunctionCodeQualifier>ZMT</PartyFunctionCodeQualifier>
+	<PartyName>Rubanov Mykola</PartyName>
+	<CountryNameCode>ZZ</CountryNameCode>
+  </NameAndAddress>
+</NameAndAddressGroup>
+<TransportInformationGroup>
+  <TransportInformation>
+	<TransportStageCodeQualifier>20</TransportStageCodeQualifier>
+	<TransportMeans>
+	  <TransportMeansDescriptionCode>GD</TransportMeansDescriptionCode>
+	</TransportMeans>
+	<TransportIdentification>
+	  <TransportMeansIdentificationNameIdentifier>9472036</TransportMeansIdentificationNameIdentifier>
+	  <TransportMeansIdentificationName>SPANACO SIMPLICITY</TransportMeansIdentificationName>
+	  <TransportMeansNationalityCode>AG</TransportMeansNationalityCode>
+	</TransportIdentification>
+  </TransportInformation>
+  <Reference>
+	<ReferenceQualifier>VM</ReferenceQualifier>
+	<ReferenceIdentifier>V2QQ9</ReferenceIdentifier>
+  </Reference>
+  <Reference>
+	<ReferenceQualifier>ZIO</ReferenceQualifier>
+	<ReferenceIdentifier>018THE STANDARD P&amp;I CLUB</ReferenceIdentifier>
+  </Reference>
+  <Reference>
+	<ReferenceQualifier>ZIC</ReferenceQualifier>
+	<ReferenceIdentifier>006THE STANDARD P&amp;I CLUB</ReferenceIdentifier>
+  </Reference>
+  <Reference>
+	<ReferenceQualifier>ZSC</ReferenceQualifier>
+	<ReferenceIdentifier>008RINA</ReferenceIdentifier>
+  </Reference>
+  <Reference>
+	<ReferenceQualifier>ZCS</ReferenceQualifier>
+	<ReferenceIdentifier>ZZZZ</ReferenceIdentifier>
+  </Reference>
+  <Reference>
+	<ReferenceQualifier>ZNG</ReferenceQualifier>
+  </Reference>
+  <Reference>
+	<ReferenceQualifier>ZSB</ReferenceQualifier>
+	<ReferenceIdentifier>00</ReferenceIdentifier>
+  </Reference>
+  <Reference>
+	<ReferenceQualifier>ZAN</ReferenceQualifier>
+  </Reference>
+  <Reference>
+	<ReferenceQualifier>ZNM</ReferenceQualifier>
+  </Reference>
+  <DateTimePeriod>
+	<DateOrTimeOrPeriodFunctionCodeQualifier>132</DateOrTimeOrPeriodFunctionCodeQualifier>
+	<DateOrTimeOrPeriodValue>201904271230</DateOrTimeOrPeriodValue>
+	<DateOrTimeOrPeriodFormatCode>203</DateOrTimeOrPeriodFormatCode>
+  </DateTimePeriod>
+  <DateTimePeriod>
+	<DateOrTimeOrPeriodFunctionCodeQualifier>133</DateOrTimeOrPeriodFunctionCodeQualifier>
+	<DateOrTimeOrPeriodValue>201905021900</DateOrTimeOrPeriodValue>
+	<DateOrTimeOrPeriodFormatCode>203</DateOrTimeOrPeriodFormatCode>
+  </DateTimePeriod>
+  <Measurements>
+	<MeasurementApplicationQualifier>AAE</MeasurementApplicationQualifier>
+	<MeasurementsDetails>
+	  <MeasurementDimensionCode>ZMD</MeasurementDimensionCode>
+	</MeasurementsDetails>
+	<ValueRange>
+	  <MeasureUnitQualifier>MTR</MeasureUnitQualifier>
+	  <MeasurementValue>5.12</MeasurementValue>
+	  <RangeMinimum>0</RangeMinimum>
+	  <RangeMaximum>0</RangeMaximum>
+	</ValueRange>
+  </Measurements>
+  <Measurements>
+	<MeasurementApplicationQualifier>AAE</MeasurementApplicationQualifier>
+	<MeasurementsDetails>
+	  <MeasurementDimensionCode>WM</MeasurementDimensionCode>
+	</MeasurementsDetails>
+	<ValueRange>
+	  <MeasureUnitQualifier>MTR</MeasureUnitQualifier>
+	  <MeasurementValue>15.2</MeasurementValue>
+	  <RangeMinimum>0</RangeMinimum>
+	  <RangeMaximum>0</RangeMaximum>
+	</ValueRange>
+  </Measurements>
+  <Measurements>
+	<MeasurementApplicationQualifier>LAO</MeasurementApplicationQualifier>
+	<MeasurementsDetails>
+	  <MeasurementDimensionCode>LM</MeasurementDimensionCode>
+	</MeasurementsDetails>
+	<ValueRange>
+	  <MeasureUnitQualifier>MTR</MeasureUnitQualifier>
+	  <MeasurementValue>89.98</MeasurementValue>
+	  <RangeMinimum>0</RangeMinimum>
+	  <RangeMaximum>0</RangeMaximum>
+	</ValueRange>
+  </Measurements>
+  <Measurements>
+	<MeasurementApplicationQualifier>AAE</MeasurementApplicationQualifier>
+	<MeasurementsDetails>
+	  <MeasurementDimensionCode>HM</MeasurementDimensionCode>
+	</MeasurementsDetails>
+	<ValueRange>
+	  <MeasureUnitQualifier>MTR</MeasureUnitQualifier>
+	  <MeasurementValue>6.6</MeasurementValue>
+	  <RangeMinimum>0</RangeMinimum>
+	  <RangeMaximum>0</RangeMaximum>
+	</ValueRange>
+  </Measurements>
+  <Measurements>
+	<MeasurementApplicationQualifier>WT</MeasurementApplicationQualifier>
+	<MeasurementsDetails>
+	  <MeasurementDimensionCode>AAM</MeasurementDimensionCode>
+	</MeasurementsDetails>
+	<ValueRange>
+	  <MeasureUnitQualifier>TNE</MeasureUnitQualifier>
+	  <MeasurementValue>2984</MeasurementValue>
+	  <RangeMinimum>0</RangeMinimum>
+	  <RangeMaximum>0</RangeMaximum>
+	</ValueRange>
+  </Measurements>
+  <Measurements>
+	<MeasurementApplicationQualifier>WT</MeasurementApplicationQualifier>
+	<MeasurementsDetails>
+	  <MeasurementDimensionCode>ZDW</MeasurementDimensionCode>
+	</MeasurementsDetails>
+	<ValueRange>
+	  <MeasureUnitQualifier>TNE</MeasureUnitQualifier>
+	  <MeasurementValue>4250</MeasurementValue>
+	  <RangeMinimum>0</RangeMinimum>
+	  <RangeMaximum>0</RangeMaximum>
+	</ValueRange>
+  </Measurements>
+  <Measurements>
+	<MeasurementApplicationQualifier>AAE</MeasurementApplicationQualifier>
+	<MeasurementsDetails>
+	  <MeasurementDimensionCode>HT</MeasurementDimensionCode>
+	</MeasurementsDetails>
+	<ValueRange>
+	  <MeasureUnitQualifier>MTR</MeasureUnitQualifier>
+	  <MeasurementValue>24.6</MeasurementValue>
+	  <RangeMinimum>0</RangeMinimum>
+	  <RangeMaximum>0</RangeMaximum>
+	</ValueRange>
+  </Measurements>
+  <Measurements>
+	<MeasurementApplicationQualifier>AAE</MeasurementApplicationQualifier>
+	<MeasurementsDetails>
+	  <MeasurementDimensionCode>ZMP</MeasurementDimensionCode>
+	</MeasurementsDetails>
+	<ValueRange>
+	  <MeasureUnitQualifier>HP</MeasureUnitQualifier>
+	  <MeasurementValue>2800</MeasurementValue>
+	  <RangeMinimum>0</RangeMinimum>
+	  <RangeMaximum>0</RangeMaximum>
+	</ValueRange>
+  </Measurements>
+  <Measurements>
+	<MeasurementApplicationQualifier>ABS</MeasurementApplicationQualifier>
+	<MeasurementsDetails>
+	  <MeasurementDimensionCode>ZVC</MeasurementDimensionCode>
+	</MeasurementsDetails>
+	<ValueRange>
+	  <MeasureUnitQualifier>KNT</MeasureUnitQualifier>
+	  <MeasurementValue>10.5</MeasurementValue>
+	  <RangeMinimum>0</RangeMinimum>
+	  <RangeMaximum>0</RangeMaximum>
+	</ValueRange>
+  </Measurements>
+  <Measurements>
+	<MeasurementApplicationQualifier>ABS</MeasurementApplicationQualifier>
+	<MeasurementsDetails>
+	  <MeasurementDimensionCode>ZVM</MeasurementDimensionCode>
+	</MeasurementsDetails>
+	<ValueRange>
+	  <MeasureUnitQualifier>KNT</MeasureUnitQualifier>
+	  <MeasurementValue>11.5</MeasurementValue>
+	  <RangeMinimum>0</RangeMinimum>
+	  <RangeMaximum>0</RangeMaximum>
+	</ValueRange>
+  </Measurements>
+  <FreeText>
+	<TextSubjectCodeQualifier>ACB</TextSubjectCodeQualifier>
+	<FreeTextValueCode>ZNI</FreeTextValueCode>
+  </FreeText>
+  <FreeText>
+	<TextSubjectCodeQualifier>ACB</TextSubjectCodeQualifier>
+	<FreeTextValueCode>ZNM</FreeTextValueCode>
+  </FreeText>
+  <FreeText>
+	<TextSubjectCodeQualifier>ACB</TextSubjectCodeQualifier>
+	<FreeTextValueCode>ZAC</FreeTextValueCode>
+  </FreeText>
+  <FreeText>
+	<TextSubjectCodeQualifier>ACB</TextSubjectCodeQualifier>
+	<FreeTextValueCode>Z2C</FreeTextValueCode>
+  </FreeText>
+  <PlaceLocationIdentificationGroup>
+	<PlaceLocationIdentification>
+	  <PlaceLocationQualifier>92</PlaceLocationQualifier>
+	  <LocationIdentification>
+		<PlaceLocationIdentificationLine>PTLEI</PlaceLocationIdentificationLine>
+		<CodeListResponsibleAgencyCode>6</CodeListResponsibleAgencyCode>
+	  </LocationIdentification>
+	</PlaceLocationIdentification>
+  </PlaceLocationIdentificationGroup>
+  <PlaceLocationIdentificationGroup>
+	<PlaceLocationIdentification>
+	  <PlaceLocationQualifier>153</PlaceLocationQualifier>
+	  <LocationIdentification>
+		<PlaceLocationIdentificationLine>ESGAN</PlaceLocationIdentificationLine>
+		<CodeListResponsibleAgencyCode>6</CodeListResponsibleAgencyCode>
+	  </LocationIdentification>
+	</PlaceLocationIdentification>
+  </PlaceLocationIdentificationGroup>
+  <PlaceLocationIdentificationGroup>
+	<PlaceLocationIdentification>
+	  <PlaceLocationQualifier>61</PlaceLocationQualifier>
+	  <LocationIdentification>
+		<PlaceLocationIdentificationLine>MACAS</PlaceLocationIdentificationLine>
+		<CodeListResponsibleAgencyCode>6</CodeListResponsibleAgencyCode>
+	  </LocationIdentification>
+	</PlaceLocationIdentification>
+  </PlaceLocationIdentificationGroup>
+  <PlaceLocationIdentificationGroup>
+	<PlaceLocationIdentification>
+	  <PlaceLocationQualifier>89</PlaceLocationQualifier>
+	  <LocationIdentification>
+		<PlaceLocationIdentificationLine>AGSJO</PlaceLocationIdentificationLine>
+		<CodeListResponsibleAgencyCode>6</CodeListResponsibleAgencyCode>
+	  </LocationIdentification>
+	</PlaceLocationIdentification>
+	<DateTimePeriod>
+	  <DateOrTimeOrPeriodFunctionCodeQualifier>183</DateOrTimeOrPeriodFunctionCodeQualifier>
+	  <DateOrTimeOrPeriodValue>20090202</DateOrTimeOrPeriodValue>
+	  <DateOrTimeOrPeriodFormatCode>102</DateOrTimeOrPeriodFormatCode>
+	</DateTimePeriod>
+  </PlaceLocationIdentificationGroup>
+  <PlaceLocationIdentificationGroup>
+	<PlaceLocationIdentification>
+	  <PlaceLocationQualifier>229</PlaceLocationQualifier>
+	  <LocationIdentification>
+		<PlaceLocationIdentificationLine>PTSET</PlaceLocationIdentificationLine>
+		<CodeListResponsibleAgencyCode>6</CodeListResponsibleAgencyCode>
+	  </LocationIdentification>
+	</PlaceLocationIdentification>
+	<DateTimePeriod>
+	  <DateOrTimeOrPeriodFunctionCodeQualifier>379</DateOrTimeOrPeriodFunctionCodeQualifier>
+	  <DateOrTimeOrPeriodValue>20180706</DateOrTimeOrPeriodValue>
+	  <DateOrTimeOrPeriodFormatCode>102</DateOrTimeOrPeriodFormatCode>
+	</DateTimePeriod>
+  </PlaceLocationIdentificationGroup>
+  <GovernalRequirementsGroup>
+	<GovernmentalRequirements>
+	  <TransportMovementCode>1</TransportMovementCode>
+	</GovernmentalRequirements>
+	<Reference>
+	  <ReferenceQualifier>ZCS</ReferenceQualifier>
+	  <ReferenceIdentifier>01</ReferenceIdentifier>
+	</Reference>
+	<NameAndAddress>
+	  <PartyFunctionCodeQualifier>CN</PartyFunctionCodeQualifier>
+	  <PartyIdentificationDetails>
+		<PartyIdentifier>B12912036</PartyIdentifier>
+		<CodeListIdentificationCode>167</CodeListIdentificationCode>
+		<CodeListResponsibleAgencyCode>148</CodeListResponsibleAgencyCode>
+	  </PartyIdentificationDetails>
+	  <PartyName>SINGLAR AGENCIA MARITIMA, S.L.</PartyName>
+	</NameAndAddress>
+  </GovernalRequirementsGroup>
+  <GovernalRequirementsGroup>
+	<GovernmentalRequirements>
+	  <TransportMovementCode>ZDL</TransportMovementCode>
+	</GovernmentalRequirements>
+	<Reference>
+	  <ReferenceQualifier>ZCE</ReferenceQualifier>
+	  <ReferenceIdentifier>00</ReferenceIdentifier>
+	</Reference>
+  </GovernalRequirementsGroup>
+</TransportInformationGroup>
+<TransportServiceRequirementsGroup>
+  <TransportServiceRequirements>
+	<Service>
+	  <ServiceRequirementCode>A01</ServiceRequirementCode>
+	  <CodeListIdentification>128</CodeListIdentification>
+	  <CodeListResponsibleAgencyCode>ZAP</CodeListResponsibleAgencyCode>
+	</Service>
+	<Service>
+	  <ServiceRequirementCode>ABM</ServiceRequirementCode>
+	  <CodeListIdentification>102</CodeListIdentification>
+	  <CodeListResponsibleAgencyCode>ZAP</CodeListResponsibleAgencyCode>
+	</Service>
+  </TransportServiceRequirements>
+  <PlaceLocationIdentificationGroup2>
+	<PlaceLocationIdentification>
+	  <PlaceLocationQualifier>60</PlaceLocationQualifier>
+	  <LocationIdentification>
+		<PlaceLocationIdentificationLine>046</PlaceLocationIdentificationLine>
+		<PlaceLocation>SERPIS (GDA)</PlaceLocation>
+	  </LocationIdentification>
+	</PlaceLocationIdentification>
+	<Measurements>
+	  <MeasurementApplicationQualifier>AAE</MeasurementApplicationQualifier>
+	  <MeasurementsDetails>
+		<MeasurementDimensionCode>ZAD</MeasurementDimensionCode>
+	  </MeasurementsDetails>
+	  <ValueRange>
+		<MeasureUnitQualifier>MTR</MeasureUnitQualifier>
+		<MeasurementValue>3.5</MeasurementValue>
+	  </ValueRange>
+	</Measurements>
+	<Measurements>
+	  <MeasurementApplicationQualifier>AAE</MeasurementApplicationQualifier>
+	  <MeasurementsDetails>
+		<MeasurementDimensionCode>ZDD</MeasurementDimensionCode>
+	  </MeasurementsDetails>
+	  <ValueRange>
+		<MeasureUnitQualifier>MTR</MeasureUnitQualifier>
+		<MeasurementValue>5</MeasurementValue>
+	  </ValueRange>
+	</Measurements>
+	<DateTimePeriod>
+	  <DateOrTimeOrPeriodFunctionCodeQualifier>178</DateOrTimeOrPeriodFunctionCodeQualifier>
+	  <DateOrTimeOrPeriodValue>201904271300</DateOrTimeOrPeriodValue>
+	  <DateOrTimeOrPeriodFormatCode>203</DateOrTimeOrPeriodFormatCode>
+	</DateTimePeriod>
+	<DateTimePeriod>
+	  <DateOrTimeOrPeriodFunctionCodeQualifier>189</DateOrTimeOrPeriodFunctionCodeQualifier>
+	  <DateOrTimeOrPeriodValue>201905021900</DateOrTimeOrPeriodValue>
+	  <DateOrTimeOrPeriodFormatCode>203</DateOrTimeOrPeriodFormatCode>
+	</DateTimePeriod>
+	<DateTimePeriod>
+	  <DateOrTimeOrPeriodFunctionCodeQualifier>291</DateOrTimeOrPeriodFunctionCodeQualifier>
+	  <DateOrTimeOrPeriodValue>201904300800</DateOrTimeOrPeriodValue>
+	  <DateOrTimeOrPeriodFormatCode>203</DateOrTimeOrPeriodFormatCode>
+	</DateTimePeriod>
+	<DateTimePeriod>
+	  <DateOrTimeOrPeriodFunctionCodeQualifier>292</DateOrTimeOrPeriodFunctionCodeQualifier>
+	  <DateOrTimeOrPeriodValue>201905021800</DateOrTimeOrPeriodValue>
+	  <DateOrTimeOrPeriodFormatCode>203</DateOrTimeOrPeriodFormatCode>
+	</DateTimePeriod>
+	<PurposeOfConveyanceCall>
+	  <ConveyanceCallPurposeDescriptionCode>ZOP</ConveyanceCallPurposeDescriptionCode>
+	</PurposeOfConveyanceCall>
+	<PurposeOfConveyanceCall>
+	  <ConveyanceCallPurposeDescriptionCode>ZZ0</ConveyanceCallPurposeDescriptionCode>
+	</PurposeOfConveyanceCall>
+	<HandlingInstructionsDetailsGroup>
+	  <HandlingInstructions>
+		<HandlingInstructionCode>ZE1</HandlingInstructionCode>
+	  </HandlingInstructions>
+	  <NameAndAddress>
+		<PartyFunctionCodeQualifier>TR</PartyFunctionCodeQualifier>
+		<PartyIdentificationDetails>
+		  <PartyIdentifier>A97227946</PartyIdentifier>
+		</PartyIdentificationDetails>
+		<PartyName>DESARR. HORTOFRUTIC. SAFOR S.A</PartyName>
+	  </NameAndAddress>
+	  <NatureOfCargoGroup>
+		<NatureOfCargo>
+		  <NatureOfCargoCode>Z34</NatureOfCargoCode>
+		</NatureOfCargo>
+		<FreeText>
+		  <TextSubjectCodeQualifier>ACB</TextSubjectCodeQualifier>
+		  <TextLiteral>
+			<FreeTextValue>SERPIS (GDA)</FreeTextValue>
+		  </TextLiteral>
+		</FreeText>
+		<Measurements>
+		  <MeasurementApplicationQualifier>AAE</MeasurementApplicationQualifier>
+		  <MeasurementsDetails>
+			<MeasurementDimensionCode>AAW</MeasurementDimensionCode>
+		  </MeasurementsDetails>
+		  <ValueRange>
+			<MeasureUnitQualifier>MTQ</MeasureUnitQualifier>
+			<MeasurementValue>3300</MeasurementValue>
+		  </ValueRange>
+		</Measurements>
+	  </NatureOfCargoGroup>
+	</HandlingInstructionsDetailsGroup>
+  </PlaceLocationIdentificationGroup2>
+</TransportServiceRequirementsGroup>
+</BERMAN>
